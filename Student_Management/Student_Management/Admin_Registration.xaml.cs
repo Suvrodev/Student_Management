@@ -29,6 +29,7 @@ namespace Student_Management
 
         private void Reset_btn(object sender, RoutedEventArgs e)
         {
+            ID_box.Text = "";
             FName_Box.Text = "";
             LName_Box.Text="";
             Age_box.Text = ""; 
@@ -43,6 +44,7 @@ namespace Student_Management
 
         private void Reg_Click_btn(object sender, RoutedEventArgs e)
         {
+            String ID = ID_box.Text;
             String FName = FName_Box.Text;
             String LName = LName_Box.Text;
             String Age = Age_box.Text;
@@ -82,7 +84,7 @@ namespace Student_Management
             string DOB = cal_date.SelectedDate.Value.ToShortDateString();
          
             //Message box for surity of data
-            MessageBoxResult results = MessageBox.Show(FName+"\n"+LName + "\n" + Age + "\n" + Sex + "\n" + Religion + "\n" + Merital_Status + "\n" + Email + "\n" + Phone
+            MessageBoxResult results = MessageBox.Show(ID+"\n"+FName+"\n"+LName + "\n" + Age + "\n" + Sex + "\n" + Religion + "\n" + Merital_Status + "\n" + Email + "\n" + Phone
                 + "\n" + DOB + "\n" + Location + "\n" + Skill + "\n" + Password + "\n" + Confirm_Password);
 
 
@@ -101,7 +103,7 @@ namespace Student_Management
 
 
                             String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
-                            String Query = "INSERT INTO `admin`(`fname`, `lname`, `age`, `sex`, `Religion`, `m_s`, `mail`, `phn`, `dob`, `loc`, `skill`, `pass`, `status`) VALUES ('" + FName + "','" + LName + "','" + Age + "','" + Sex + "','" + Religion + "','" + Merital_Status + "','" + Email + "','" + Phone + "','" + DOB + "','" + Location + "','" + Skill + "','" + Password + "','False')";
+                            String Query = "INSERT INTO `admin`(`ID`,`fname`, `lname`, `age`, `sex`, `Religion`, `m_s`, `mail`, `phn`, `dob`, `loc`, `skill`, `pass`, `status`) VALUES ('" + ID + "','" + FName + "','" + LName + "','" + Age + "','" + Sex + "','" + Religion + "','" + Merital_Status + "','" + Email + "','" + Phone + "','" + DOB + "','" + Location + "','" + Skill + "','" + Password + "','False')";
 
 
 

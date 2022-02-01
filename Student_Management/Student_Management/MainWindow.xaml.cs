@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MySql.Data.MySqlClient;
 
 namespace Student_Management
 {
@@ -30,7 +31,35 @@ namespace Student_Management
             String ID = ID_Box.Text;
             String Password = Pass_Box.Password;
 
-            if(ID=="abc" && Password == "123")
+            String id="", pass="";
+
+
+            /////Data Retrive//////////
+            String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+           // String Query = "SELECT `"+ID+"`, `"+Password+"`  FROM `admin` WHERE ID='"+ID+"';";
+            String Query =" SELECT * FROM `admin` WHERE ID = '"+ID+"'";
+
+
+            MySqlConnection mycon = new MySqlConnection(Connection);
+            MySqlCommand myCom = new MySqlCommand(Query, mycon);
+
+            MySqlDataReader reader;
+            mycon.Open();
+            reader = myCom.ExecuteReader();
+            while (reader.Read())
+            {
+                 id =Convert.ToString(reader[0]);
+                 pass = Convert.ToString(reader[12]);
+
+               
+               // Console.WriteLine(reader[0] + " " + reader[1] + " " + reader[2] + " " + reader[3] + " " + reader[4]);
+
+            }
+
+            
+            mycon.Close();
+
+            if(ID==id && Password == pass)
             {
                 After_Login a = new After_Login();
                 a.Show();
@@ -38,8 +67,11 @@ namespace Student_Management
             }
             else
             {
-                MessageBoxResult result = MessageBox.Show("Wrong ID or Password");
+                MessageBoxResult result = MessageBox.Show("ID or Password Not matched");
             }
+           
+
+         
         }
 
         private void Reset_btn(object sender, RoutedEventArgs e)
