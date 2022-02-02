@@ -31,3 +31,17 @@ F:\AAA\Project\Student_Management\Student_Management\bin\Debug\K4os.Hash.xxHash.
 F:\AAA\Project\Student_Management\Student_Management\bin\Debug\MySql.Data.xml
 F:\AAA\Project\Student_Management\Student_Management\bin\Debug\MySql.Data.EntityFramework.xml
 F:\AAA\Project\Student_Management\Student_Management\bin\Debug\MySql.Web.xml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Dean_Login.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Dean_Login.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\DeanProfile.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\DeanProfile.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\StudentRegistration.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\StudentRegistration.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Student_Activity.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Student_Login.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Student_Activity.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Student_Login.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Admin_Update.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Admin_Update.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\StudentViewSetting.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\StudentViewSetting.baml

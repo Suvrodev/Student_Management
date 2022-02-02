@@ -7,6 +7,25 @@
         mc:Ignorable="d"
         Title="After_Login" Height="350" Width="525">
     <Grid Margin="0,0,2,1">
-        <Label x:Name="label" Content="After Login" VerticalAlignment="Top" Height="40" Width="518" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,-3,0"/>
+        <Label x:Name="label" Content="Admin Profile" VerticalAlignment="Top" Height="40" Width="518" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="-3,0,0,0"/>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="172" Margin="0,45,0,0">
+            <MenuItem Background="#FF97E6EE" FontSize="10" Header="Update" Click="Update_Admin"/>
+            <MenuItem Background="#FFA1E289" FontSize="10" Header="Students" Height="17" Width="57">
+                <MenuItem Header="Add" Click="Add_Student"/>
+                <MenuItem Header="View And Setting" Click="ViewAndSetting"/>
+                <MenuItem Header="View All"/>
+            </MenuItem>
+            <MenuItem Background="#FFCC74F5" FontSize="10" Header="Teacher" Height="17" Width="57">
+                <MenuItem Header="Add"/>
+                <MenuItem Header="Modify"/>
+                <MenuItem Header="Delete"/>
+                <MenuItem Header="Show"/>
+                <MenuItem Header="Show All"/>
+            </MenuItem>
+        </Menu>
+        <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="207,109,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Width="153" Background="#FF53C9D4" Height="21" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold"/>
+        <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="141,77,0,0" TextWrapping="Wrap" Text="Smeone" VerticalAlignment="Top" Width="208" Background="#FF69E8D1" RenderTransformOrigin="1.462,-0.459" Height="27" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20"/>
+        <TextBlock x:Name="for_id_Copy" HorizontalAlignment="Left" Margin="141,109,0,0" TextWrapping="Wrap" Text="Your ID:" VerticalAlignment="Top" Width="66" Background="#FF53C9D4" Height="21" RenderTransformOrigin="1.269,2.737" FontSize="18"/>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="145,150,0,0" VerticalAlignment="Top" Width="75" Click="Message"/>
     </Grid>
 </Window>

@@ -32,11 +32,12 @@ namespace Student_Management
             String Password = Pass_Box.Password;
 
             String id="", pass="";
+            String fname="", lname="", age = "", sex = "", rel = "", m_s = "", mail = "", phn = "", dob = "", loc = "",skill="";
 
 
             /////Data Retrive//////////
             String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
-           // String Query = "SELECT `"+ID+"`, `"+Password+"`  FROM `admin` WHERE ID='"+ID+"';";
+          
             String Query =" SELECT * FROM `admin` WHERE ID = '"+ID+"'";
 
 
@@ -48,8 +49,19 @@ namespace Student_Management
             reader = myCom.ExecuteReader();
             while (reader.Read())
             {
-                 id =Convert.ToString(reader[0]);
-                 pass = Convert.ToString(reader[12]);
+                id =Convert.ToString(reader[0]);
+                fname = Convert.ToString(reader[1]);
+                lname = Convert.ToString(reader[2]);
+                age = Convert.ToString(reader[3]);
+                sex = Convert.ToString(reader[4]);
+                rel = Convert.ToString(reader[5]);
+                m_s = Convert.ToString(reader[6]);
+                mail = Convert.ToString(reader[7]);
+                phn = Convert.ToString(reader[8]);
+                dob = Convert.ToString(reader[9]);
+                loc = Convert.ToString(reader[10]);
+                skill = Convert.ToString(reader[11]);
+                pass = Convert.ToString(reader[12]);
 
                
                // Console.WriteLine(reader[0] + " " + reader[1] + " " + reader[2] + " " + reader[3] + " " + reader[4]);
@@ -59,19 +71,32 @@ namespace Student_Management
             
             mycon.Close();
 
-            if(ID==id && Password == pass)
-            {
-                After_Login a = new After_Login();
-                a.Show();
-                this.Close();
-            }
-            else
-            {
-                MessageBoxResult result = MessageBox.Show("ID or Password Not matched");
-            }
-           
+             if(ID==id && Password == pass)
+             {
 
-         
+                String YourName = "Hey " + fname + " " + lname;
+                String YourID = id;
+
+                 After_Login a = new After_Login();
+
+                 a.for_name.Text = YourName;
+                 a.for_id.Text = YourID;
+                
+
+                 a.Show();
+                 this.Close();
+             }
+             else
+             {
+                 MessageBoxResult result = MessageBox.Show("ID or Password Not matched");
+             }
+
+            /*After_Login a = new After_Login();
+            a.Show();
+            this.Close();*/
+
+
+
         }
 
         private void Reset_btn(object sender, RoutedEventArgs e)
@@ -93,6 +118,20 @@ namespace Student_Management
         {
             Admin_Registration a = new Admin_Registration();
             a.Show();
+            this.Close();
+        }
+
+        private void Dean_go(object sender, RoutedEventArgs e)
+        {
+            Dean_Login d = new Dean_Login();
+            d.Show();
+            this.Close();
+        }
+
+        private void Student_go(object sender, RoutedEventArgs e)
+        {
+            Student_Login s = new Student_Login();
+            s.Show();
             this.Close();
         }
     }
