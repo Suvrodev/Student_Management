@@ -32,12 +32,11 @@ namespace Student_Management
             String Password = Pass_Box.Password;
 
             String id="", pass="";
-            String fname="", lname="", age = "", sex = "", rel = "", m_s = "", mail = "", phn = "", dob = "", loc = "",skill="";
+            String fname="", lname="", age = "", sex = "", rel = "", m_s = "", mail = "", phn = "", dob = "", loc = "",skill="",Status="";
 
 
             /////Data Retrive//////////
-            String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
-          
+            String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";      
             String Query =" SELECT * FROM `admin` WHERE ID = '"+ID+"'";
 
 
@@ -62,9 +61,10 @@ namespace Student_Management
                 loc = Convert.ToString(reader[10]);
                 skill = Convert.ToString(reader[11]);
                 pass = Convert.ToString(reader[12]);
+                Status = Convert.ToString(reader[13]);
 
-               
-               // Console.WriteLine(reader[0] + " " + reader[1] + " " + reader[2] + " " + reader[3] + " " + reader[4]);
+
+                // Console.WriteLine(reader[0] + " " + reader[1] + " " + reader[2] + " " + reader[3] + " " + reader[4]);
 
             }
 
@@ -73,18 +73,25 @@ namespace Student_Management
 
              if(ID==id && Password == pass)
              {
+                if (Status == "True")
+                {
 
-                String YourName = "Hey " + fname + " " + lname;
-                String YourID = id;
+                    String YourName = "Hey " + fname + " " + lname;
+                    String YourID = id;
 
-                 After_Login a = new After_Login();
+                    After_Login a = new After_Login();
 
-                 a.for_name.Text = YourName;
-                 a.for_id.Text = YourID;
-                
+                    a.for_name.Text = YourName;
+                    a.for_id.Text = YourID;
 
-                 a.Show();
-                 this.Close();
+
+                    a.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("You Are not Verified by Dean Sir");
+                }
              }
              else
              {

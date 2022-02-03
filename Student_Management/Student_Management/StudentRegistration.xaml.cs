@@ -27,6 +27,7 @@ namespace Student_Management
 
         private void Reg_Click_btn(object sender, RoutedEventArgs e)
         {
+            String Checking_ID = "";
             String ID = ID_box.Text;
             String FName = FName_Box.Text;
             String LName = LName_Box.Text;
@@ -76,43 +77,77 @@ namespace Student_Management
 
 
             //////////////////////////////////////////////////////////
+            ////ID Checking/////////////
+            ///////////////////////////////
+            String Connections = "Server=127.0.0.1;User ID=root; DataBase=project";
+            String Querys = " SELECT * FROM `students` WHERE ID = '" + ID + "'";
 
-            if (Password.Length >= 6)
+
+            MySqlConnection mycons = new MySqlConnection(Connections);
+            MySqlCommand myComs = new MySqlCommand(Querys, mycons);
+
+            MySqlDataReader readers;
+            mycons.Open();
+            readers = myComs.ExecuteReader();
+            while (readers.Read())
             {
-                MessageBoxResult m = MessageBox.Show("Do you relly Insert?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                Checking_ID = Convert.ToString(readers[0]);
 
-                switch (m)
-                {
-                    //1st case
-                    case MessageBoxResult.Yes:
-                        /////Insert Data////
+            }
 
 
-                        String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
-                        String Query = "INSERT INTO `students`(`ID`, `fname`, `lname`, `age`, `sex`, `religion`, `Department`, `Semester`, `Section`, `cgpa`, `phn`, `mail`, `dob`, `location`, `password`) VALUES ('" + ID + "','" + FName + "','" + LName + "','" + Age + "','" + Sex + "','" + Religion + "','" + Department + "','" + Semester + "','" + Section + "','" + CGPA + "','" + Phone + "','" + Email + "','" + DOB + "','" + Location + "','" + Password + "')";
+            mycons.Close();
 
 
+            ///////////////////////////////////////////////
+            ////ID Checking End/////////////
 
-                        MySqlConnection mycon = new MySqlConnection(Connection);
-                        MySqlCommand myCom = new MySqlCommand(Query, mycon);
-                        mycon.Open();
-                        MySqlDataReader reader = myCom.ExecuteReader(); ;
-                        mycon.Close();
-                        MessageBoxResult result = MessageBox.Show("Data Inserted Successfully");
+            ///////////////////////////////////////////////////////////
 
-
-                        ///Insert Data Close///
-
-                        break;
-
-                    //2nd Case
-                    case MessageBoxResult.No:
-                        break;
-                }
+            if (ID == Checking_ID)
+            {
+                MessageBox.Show("This ID Already Exists");
             }
             else
             {
-                MessageBoxResult result = MessageBox.Show("Password Should be 6 or More digit");
+
+                if (Password.Length >= 6)
+                {
+                    MessageBoxResult m = MessageBox.Show("Do you relly Insert?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                    switch (m)
+                    {
+                        //1st case
+                        case MessageBoxResult.Yes:
+                            /////Insert Data////
+
+
+                            String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+                            String Query = "INSERT INTO `students`(`ID`, `fname`, `lname`, `age`, `sex`, `religion`, `Department`, `Semester`, `Section`, `cgpa`, `phn`, `mail`, `dob`, `location`, `password`) VALUES ('" + ID + "','" + FName + "','" + LName + "','" + Age + "','" + Sex + "','" + Religion + "','" + Department + "','" + Semester + "','" + Section + "','" + CGPA + "','" + Phone + "','" + Email + "','" + DOB + "','" + Location + "','" + Password + "')";
+
+
+
+                            MySqlConnection mycon = new MySqlConnection(Connection);
+                            MySqlCommand myCom = new MySqlCommand(Query, mycon);
+                            mycon.Open();
+                            MySqlDataReader reader = myCom.ExecuteReader(); ;
+                            mycon.Close();
+                            MessageBoxResult result = MessageBox.Show("Data Inserted Successfully");
+
+
+                            ///Insert Data Close///
+
+                            break;
+
+                        //2nd Case
+                        case MessageBoxResult.No:
+                            break;
+                    }
+                }
+                else
+                {
+                    MessageBoxResult result = MessageBox.Show("Password Should be 6 or More digit");
+                }
             }
         
         //////////////////////////////////////////////////////////

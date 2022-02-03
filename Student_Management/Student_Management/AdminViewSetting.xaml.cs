@@ -25,6 +25,172 @@ namespace Student_Management
             InitializeComponent();
         }
 
+        private void modify_btn(object sender, RoutedEventArgs e)
+        {
+            String Deleted_ID = ID_box.Text;
+            if (Deleted_ID == "")
+            {
+                MessageBox.Show("Invalid ID");
+            }
+            else
+            {
+                String ID = ID_box.Text;
+                String FName = FName_Box.Text;
+                String LName = LName_Box.Text;
+                String Age = Age_box.Text;
+                String Email = mail_box.Text;
+                String Phone = Phn_Box.Text;
+                String Location = Loc_box.Text;
+                String Skill = Skill_Box.Text;
+                String Password = pass_box.Text;
+                String DOB = dob_box.Text;
+                String Sex = "", Merital_Status = "",Status="",Religion="";
+
+                if (RB_Male.IsChecked == true)
+                {
+                    Sex = "Male";
+                }
+                else if (RB_Female.IsChecked == true)
+                {
+                    Sex = "Female";
+                }
+                else if (RB_Other.IsChecked == true)
+                {
+                    Sex = "other";
+                }
+
+                ////Combo box
+                var Religion_Temp = (ComboBoxItem)comboBox_rl.SelectedItem;
+                Religion = (String)Religion_Temp.Content;
+
+                var Status_Temp = (ComboBoxItem)comboBox_status.SelectedItem;
+                Status = (String)Status_Temp.Content;
+
+                ////Combo box
+
+
+                if (Merried.IsChecked == true)
+                {
+                    Merital_Status = "Merried";
+                }
+                if (Unmerried.IsChecked == true)
+                {
+                    Merital_Status = "Unmerried";
+                }
+
+
+                ////Start Developing
+
+                if (Password.Length >= 6)
+                {
+
+                    MessageBox.Show(ID + "\n" + FName + "\n" + LName + "\n" + Age + "\n" + Sex + "\n" + Religion + "\n" + Merital_Status + "\n" + Email + "\n" + Phone
+                + "\n" + DOB + "\n" + Location + "\n" + Skill + "\n" + Password + "\n" + Status);
+                    //Message box for surity of insert
+                    MessageBoxResult m = MessageBox.Show("Do you relly Update data?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                        switch (m)
+                        {
+                            //1st case
+                            case MessageBoxResult.Yes:
+                                /////Insert Data////
+
+
+                                String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+                              
+
+                                String Query = "UPDATE `admin` SET `ID`='"+ID+ "',`fname`='"+FName+ "',`lname`='"+LName+ "',`age`='"+Age+ "',`sex`='"+Sex+ "',`Religion`='"+Religion+ "',`m_s`='"+Merital_Status+ "',`mail`='"+Email+ "',`phn`='"+Phone+ "',`dob`='"+DOB+ "',`loc`='"+Location+ "',`skill`='"+Skill+ "',`pass`='"+Password+ "',`status`='"+Status+ "' WHERE id='"+ID+"'";
+                               
+
+
+                                MySqlConnection mycon = new MySqlConnection(Connection);
+                                MySqlCommand myCom = new MySqlCommand(Query, mycon);
+                                mycon.Open();
+                                MySqlDataReader reader = myCom.ExecuteReader(); ;
+                                mycon.Close();
+                                MessageBoxResult result = MessageBox.Show("ID Updated Successfully");
+
+
+                                ///Insert Data Close///
+
+                                break;
+
+                            //2nd Case
+                            case MessageBoxResult.No:
+                                break;
+                        }
+                }
+                else
+                {
+                    MessageBoxResult result_ = MessageBox.Show("Password should be more than 5 digit");
+                }
+            }
+       }
+
+
+        private void Delete_btn(object sender, RoutedEventArgs e)
+        {
+            String Deleted_ID = ID_box.Text;
+            if (Deleted_ID == "")
+            {
+                MessageBox.Show("Invalid ID");
+            }
+            else
+            {
+                MessageBoxResult m = MessageBox.Show("Do you Really delete Data?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                switch (m)
+                {
+                    //1st case
+                    case MessageBoxResult.Yes:
+                        /////Update Data////
+
+                        String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+                        String Query = "DELETE FROM `admin` WHERE id='" + Deleted_ID + "'";
+
+
+
+                        MySqlConnection mycon = new MySqlConnection(Connection);
+                        MySqlCommand myCom = new MySqlCommand(Query, mycon);
+                        mycon.Open();
+                        MySqlDataReader reader = myCom.ExecuteReader(); ;
+                        mycon.Close();
+                        MessageBoxResult result = MessageBox.Show("ID Deleted Successfully");
+
+
+                        ///Update Data Close///
+
+                        break;
+
+                    //2nd Case
+                    case MessageBoxResult.No:
+                        break;
+                }
+            }
+        }
+
+        private void Reset_btn(object sender, RoutedEventArgs e)
+        {
+            ID_box.Text = "";
+            FName_Box.Text = "";
+            LName_Box.Text = "";
+            Age_box.Text = "";
+            mail_box.Text = "";
+            Phn_Box.Text = "";
+            dob_box.Text = "";
+            Loc_box.Text = "";
+            Skill_Box.Text = "";
+            pass_box.Text = "";
+
+            Merried.IsChecked = false;
+            Unmerried.IsChecked = false;
+
+            RB_Male.IsChecked = false;
+            RB_Female.IsChecked = false;
+            RB_Other.IsChecked = false;
+            comboBox_rl.SelectedIndex = -1;
+            comboBox_status.SelectedIndex = -1;
+        }
+
         private void search_btn(object sender, RoutedEventArgs e)
         {
             if (ID_box_s.Text == "")
@@ -159,19 +325,10 @@ namespace Student_Management
             }
         }
 
-        private void modify_btn(object sender, RoutedEventArgs e)
-        {
+       
 
-        }
+      
 
-        private void Delete_btn(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Reset_btn(object sender, RoutedEventArgs e)
-        {
-
-        }
+       
     }
 }

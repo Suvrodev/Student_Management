@@ -47,3 +47,7 @@ F:\AAA\Project\Student_Management\Student_Management\obj\Debug\StudentViewSettin
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\StudentViewSetting.baml
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\AdminViewSetting.g.cs
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\AdminViewSetting.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\All_Admin.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\All_Admin.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\All_Students.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\All_Students.baml

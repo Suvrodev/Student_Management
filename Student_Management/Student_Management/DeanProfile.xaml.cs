@@ -52,5 +52,19 @@ namespace Student_Management
             a.Show();
             this.Close();
         }
+
+        private void ViewAllAdmin(object sender, RoutedEventArgs e)
+        {
+            All_Admin a = new All_Admin();
+            a.Show();
+            this.Close();
+        }
+
+        private void View_All_Students(object sender, RoutedEventArgs e)
+        {
+            All_Students a = new All_Students();
+            a.Show();
+            this.Close();
+        }
     }
 }

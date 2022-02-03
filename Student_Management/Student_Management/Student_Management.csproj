@@ -64,6 +64,12 @@
     <Compile Include="Admin_Update.xaml.cs">
       <DependentUpon>Admin_Update.xaml</DependentUpon>
     </Compile>
+    <Compile Include="All_Admin.xaml.cs">
+      <DependentUpon>All_Admin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="All_Students.xaml.cs">
+      <DependentUpon>All_Students.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StudentRegistration.xaml.cs">
       <DependentUpon>StudentRegistration.xaml</DependentUpon>
     </Compile>
@@ -89,6 +95,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="After_Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="All_Admin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="All_Students.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -12,12 +12,12 @@
             <MenuItem Background="#FF97E6EE" FontSize="10" Header="Admin">
                 <MenuItem Header="Add Admin" Click="Add_Admin"/>
                 <MenuItem Header="View and setting" Click="Admin_setting"/>
-                <MenuItem Header="View All"/>
+                <MenuItem Header="View All" Click="ViewAllAdmin"/>
             </MenuItem>
             <MenuItem Background="#FFA1E289" FontSize="10" Header="Students" Height="17" Width="57">
                 <MenuItem Header="Add" Click="Add_Student"/>
                 <MenuItem Header="View And Setting" Click="ViewAndSetting"/>
-                <MenuItem Header="View All"/>
+                <MenuItem Header="View All" Click="View_All_Students"/>
             </MenuItem>
             <MenuItem Background="#FFCC74F5" FontSize="10" Header="Teacher" Height="17" Width="57">
                 <MenuItem Header="Add"/>

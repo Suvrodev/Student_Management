@@ -46,6 +46,8 @@ namespace Student_Management
 
         private void Reg_Click_btn(object sender, RoutedEventArgs e)
         {
+            String Checking_ID = "";
+
             String ID = ID_box.Text;
             String FName = FName_Box.Text;
             String LName = LName_Box.Text;
@@ -89,58 +91,90 @@ namespace Student_Management
             MessageBoxResult results = MessageBox.Show(ID+"\n"+FName+"\n"+LName + "\n" + Age + "\n" + Sex + "\n" + Religion + "\n" + Merital_Status + "\n" + Email + "\n" + Phone
                 + "\n" + DOB + "\n" + Location + "\n" + Skill + "\n" + Password + "\n" + Confirm_Password);
 
+            ////ID Checking/////////////
+            ///////////////////////////////
+            String Connections = "Server=127.0.0.1;User ID=root; DataBase=project";
+            String Querys = " SELECT * FROM `admin` WHERE ID = '" + ID + "'";
 
-            if (Password.Length >= 6)
+
+            MySqlConnection mycons = new MySqlConnection(Connections);
+            MySqlCommand myComs = new MySqlCommand(Querys, mycons);
+
+            MySqlDataReader readers;
+            mycons.Open();
+            readers = myComs.ExecuteReader();
+            while (readers.Read())
             {
-                if (Password == Confirm_Password)
+                Checking_ID = Convert.ToString(readers[0]);
+
+            }
+
+
+            mycons.Close();
+
+
+            ///////////////////////////////////////////////
+            ////ID Checking End/////////////
+
+            if (ID == Checking_ID)
+            {
+                MessageBox.Show("This ID Already Exists");
+            }
+            else
+            {
+
+                if (Password.Length >= 6)
                 {
-                    //Message box for surity of insert
-                    MessageBoxResult m = MessageBox.Show("Do you relly Insert?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
-
-                    switch (m)
+                    if (Password == Confirm_Password)
                     {
-                        //1st case
-                        case MessageBoxResult.Yes:
-                            /////Insert Data////
+                        //Message box for surity of insert
+                        MessageBoxResult m = MessageBox.Show("Do you relly Insert?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                        switch (m)
+                        {
+                            //1st case
+                            case MessageBoxResult.Yes:
+                                /////Insert Data////
 
 
-                            String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
-                            String Query = "";
-                            if (catch_Data == "")
-                            {
-                                  Query = "INSERT INTO `admin`(`ID`,`fname`, `lname`, `age`, `sex`, `Religion`, `m_s`, `mail`, `phn`, `dob`, `loc`, `skill`, `pass`, `status`) VALUES ('" + ID + "','" + FName + "','" + LName + "','" + Age + "','" + Sex + "','" + Religion + "','" + Merital_Status + "','" + Email + "','" + Phone + "','" + DOB + "','" + Location + "','" + Skill + "','" + Password + "','False')";
-                            }
-                            if (catch_Data == "1")
-                            {
-                                 Query = "INSERT INTO `admin`(`ID`,`fname`, `lname`, `age`, `sex`, `Religion`, `m_s`, `mail`, `phn`, `dob`, `loc`, `skill`, `pass`, `status`) VALUES ('" + ID + "','" + FName + "','" + LName + "','" + Age + "','" + Sex + "','" + Religion + "','" + Merital_Status + "','" + Email + "','" + Phone + "','" + DOB + "','" + Location + "','" + Skill + "','" + Password + "','True')";
-                            }
+                                String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+                                String Query = "";
+                                if (catch_Data == "")
+                                {
+                                    Query = "INSERT INTO `admin`(`ID`,`fname`, `lname`, `age`, `sex`, `Religion`, `m_s`, `mail`, `phn`, `dob`, `loc`, `skill`, `pass`, `status`) VALUES ('" + ID + "','" + FName + "','" + LName + "','" + Age + "','" + Sex + "','" + Religion + "','" + Merital_Status + "','" + Email + "','" + Phone + "','" + DOB + "','" + Location + "','" + Skill + "','" + Password + "','False')";
+                                }
+                                if (catch_Data == "1")
+                                {
+                                    Query = "INSERT INTO `admin`(`ID`,`fname`, `lname`, `age`, `sex`, `Religion`, `m_s`, `mail`, `phn`, `dob`, `loc`, `skill`, `pass`, `status`) VALUES ('" + ID + "','" + FName + "','" + LName + "','" + Age + "','" + Sex + "','" + Religion + "','" + Merital_Status + "','" + Email + "','" + Phone + "','" + DOB + "','" + Location + "','" + Skill + "','" + Password + "','True')";
+                                }
 
 
-                            MySqlConnection mycon = new MySqlConnection(Connection);
-                            MySqlCommand myCom = new MySqlCommand(Query, mycon);
-                            mycon.Open();
-                            MySqlDataReader reader = myCom.ExecuteReader(); ;
-                            mycon.Close();
-                            MessageBoxResult result = MessageBox.Show("Data Inserted Successfully");
+                                MySqlConnection mycon = new MySqlConnection(Connection);
+                                MySqlCommand myCom = new MySqlCommand(Query, mycon);
+                                mycon.Open();
+                                MySqlDataReader reader = myCom.ExecuteReader(); ;
+                                mycon.Close();
+                                MessageBoxResult result = MessageBox.Show("Data Inserted Successfully");
 
 
-                            ///Insert Data Close///
+                                ///Insert Data Close///
 
-                            break;
+                                break;
 
-                        //2nd Case
-                        case MessageBoxResult.No:
-                            break;
+                            //2nd Case
+                            case MessageBoxResult.No:
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        MessageBoxResult result_ = MessageBox.Show("Password Not Matching");
                     }
                 }
                 else
                 {
-                    MessageBoxResult result_ = MessageBox.Show("Password Not Matching");
+                    MessageBoxResult result_ = MessageBox.Show("Password should be more than 5 digit");
                 }
-            }
-            else
-            {
-                MessageBoxResult result_ = MessageBox.Show("Password should be more than 5 digit");
             }
 
 
