@@ -58,6 +58,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AdminViewSetting.xaml.cs">
+      <DependentUpon>AdminViewSetting.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Admin_Update.xaml.cs">
       <DependentUpon>Admin_Update.xaml</DependentUpon>
     </Compile>
@@ -73,6 +76,10 @@
     <Compile Include="Student_Login.xaml.cs">
       <DependentUpon>Student_Login.xaml</DependentUpon>
     </Compile>
+    <Page Include="AdminViewSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Admin_Registration.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

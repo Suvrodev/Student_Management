@@ -20,6 +20,8 @@ namespace Student_Management
     /// </summary>
     public partial class Admin_Registration : Window
     {
+        public String catch_Data = "";
+
         public Admin_Registration()
         {
             InitializeComponent();
@@ -103,8 +105,15 @@ namespace Student_Management
 
 
                             String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
-                            String Query = "INSERT INTO `admin`(`ID`,`fname`, `lname`, `age`, `sex`, `Religion`, `m_s`, `mail`, `phn`, `dob`, `loc`, `skill`, `pass`, `status`) VALUES ('" + ID + "','" + FName + "','" + LName + "','" + Age + "','" + Sex + "','" + Religion + "','" + Merital_Status + "','" + Email + "','" + Phone + "','" + DOB + "','" + Location + "','" + Skill + "','" + Password + "','False')";
-
+                            String Query = "";
+                            if (catch_Data == "")
+                            {
+                                  Query = "INSERT INTO `admin`(`ID`,`fname`, `lname`, `age`, `sex`, `Religion`, `m_s`, `mail`, `phn`, `dob`, `loc`, `skill`, `pass`, `status`) VALUES ('" + ID + "','" + FName + "','" + LName + "','" + Age + "','" + Sex + "','" + Religion + "','" + Merital_Status + "','" + Email + "','" + Phone + "','" + DOB + "','" + Location + "','" + Skill + "','" + Password + "','False')";
+                            }
+                            if (catch_Data == "1")
+                            {
+                                 Query = "INSERT INTO `admin`(`ID`,`fname`, `lname`, `age`, `sex`, `Religion`, `m_s`, `mail`, `phn`, `dob`, `loc`, `skill`, `pass`, `status`) VALUES ('" + ID + "','" + FName + "','" + LName + "','" + Age + "','" + Sex + "','" + Religion + "','" + Merital_Status + "','" + Email + "','" + Phone + "','" + DOB + "','" + Location + "','" + Skill + "','" + Password + "','True')";
+                            }
 
 
                             MySqlConnection mycon = new MySqlConnection(Connection);

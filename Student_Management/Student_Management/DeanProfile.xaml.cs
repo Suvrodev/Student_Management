@@ -23,5 +23,34 @@ namespace Student_Management
         {
             InitializeComponent();
         }
+
+        private void Add_Student(object sender, RoutedEventArgs e)
+        {
+            StudentRegistration s = new StudentRegistration();
+            s.Show();
+            this.Close();
+        }
+
+        private void ViewAndSetting(object sender, RoutedEventArgs e)
+        {
+            StudentViewSetting s = new StudentViewSetting();
+            s.Show();
+            this.Close();
+        }
+
+        private void Add_Admin(object sender, RoutedEventArgs e)
+        {
+            Admin_Registration a = new Admin_Registration();
+            a.catch_Data = "1";
+            a.Show();
+            this.Close();
+        }
+
+        private void Admin_setting(object sender, RoutedEventArgs e)
+        {
+            AdminViewSetting a = new AdminViewSetting();
+            a.Show();
+            this.Close();
+        }
     }
 }

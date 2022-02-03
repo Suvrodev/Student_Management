@@ -123,7 +123,7 @@ namespace Student_Management
 
         private void Dean_go(object sender, RoutedEventArgs e)
         {
-            Dean_Login d = new Dean_Login();
+            DeanProfile d = new DeanProfile();
             d.Show();
             this.Close();
         }

@@ -74,34 +74,42 @@ namespace Student_Management
 
                 var Section_Temp = (ComboBoxItem)comboBox_section.SelectedItem;
                 String Section = (String)Section_Temp.Content;
-                ////////////////////////
-                MessageBoxResult m = MessageBox.Show("Do you Really modify Data?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
-                switch (m)
+
+                if (Password.Length >= 5)
                 {
-                    //1st case
-                    case MessageBoxResult.Yes:
-                        /////Update Data////
+                    ////////////////////////
+                    MessageBoxResult m = MessageBox.Show("Do you Really modify Data?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    switch (m)
+                    {
+                        //1st case
+                        case MessageBoxResult.Yes:
+                            /////Update Data////
 
-                        String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
-                        String Query = "UPDATE `students` SET `ID`='"+ID+ "',`fname`='"+FName+ "',`lname`='"+LName+ "',`age`='"+Age+ "',`sex`='"+Sex+ "',`religion`='"+Religion+ "',`Department`='"+Department+ "',`Semester`='"+Semester+ "',`Section`='"+Section+ "',`cgpa`='"+CGPA+ "',`phn`='"+Phone+ "',`mail`='"+Email+ "',`dob`='"+DOB+ "',`location`='"+Location+ "',`password`='"+Password+"' WHERE id='" + ID+"';";
-
-
-
-                        MySqlConnection mycon = new MySqlConnection(Connection);
-                        MySqlCommand myCom = new MySqlCommand(Query, mycon);
-                        mycon.Open();
-                        MySqlDataReader reader = myCom.ExecuteReader(); ;
-                        mycon.Close();
-                        MessageBoxResult result = MessageBox.Show("ID updated Successfully");
+                            String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+                            String Query = "UPDATE `students` SET `ID`='" + ID + "',`fname`='" + FName + "',`lname`='" + LName + "',`age`='" + Age + "',`sex`='" + Sex + "',`religion`='" + Religion + "',`Department`='" + Department + "',`Semester`='" + Semester + "',`Section`='" + Section + "',`cgpa`='" + CGPA + "',`phn`='" + Phone + "',`mail`='" + Email + "',`dob`='" + DOB + "',`location`='" + Location + "',`password`='" + Password + "' WHERE id='" + ID + "';";
 
 
-                        ///Update Data Close///
 
-                        break;
+                            MySqlConnection mycon = new MySqlConnection(Connection);
+                            MySqlCommand myCom = new MySqlCommand(Query, mycon);
+                            mycon.Open();
+                            MySqlDataReader reader = myCom.ExecuteReader(); ;
+                            mycon.Close();
+                            MessageBoxResult result = MessageBox.Show("ID updated Successfully");
 
-                    //2nd Case
-                    case MessageBoxResult.No:
-                        break;
+
+                            ///Update Data Close///
+
+                            break;
+
+                        //2nd Case
+                        case MessageBoxResult.No:
+                            break;
+                    }
+                }
+                else
+                {
+                    MessageBoxResult result = MessageBox.Show("Password Should be 6 or More digit");
                 }
             }
 
@@ -212,7 +220,11 @@ namespace Student_Management
             {
                 RB_Other.IsChecked = true;
             }
-            else {}
+            else {
+                RB_Male.IsChecked = false;
+                RB_Female.IsChecked = false;
+                RB_Other.IsChecked = false;
+            }
 
             ///Religion
             if (Rel == "Hindu")
@@ -231,7 +243,9 @@ namespace Student_Management
             {
                comboBox_rl.SelectedIndex = 3;
             }
-            else {}
+            else {
+                comboBox_rl.SelectedIndex = -1;
+            }
 
             ///Department
             if (Department == "CSE")
@@ -250,7 +264,9 @@ namespace Student_Management
             {
                 comboBox_dprtmnt.SelectedIndex = 3;
             }
-            else {}
+            else {
+                comboBox_dprtmnt.SelectedIndex = -1;
+            }
 
 
             ///Section
@@ -270,7 +286,9 @@ namespace Student_Management
             {
                 comboBox_section.SelectedIndex = 3;
             }
-            else {}
+            else {
+                comboBox_section.SelectedIndex = -1;
+            }
 
 
             ///Semester
@@ -322,7 +340,9 @@ namespace Student_Management
             {
                 comboBox_semester.SelectedIndex = 11;
             }
-            else {}
+            else {
+                comboBox_semester.SelectedIndex = -1;
+            }
 
 
             if (id == "")

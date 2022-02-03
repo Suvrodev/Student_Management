@@ -76,35 +76,43 @@ namespace Student_Management
 
 
             //////////////////////////////////////////////////////////
-            MessageBoxResult m = MessageBox.Show("Do you relly Insert?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
-            switch (m)
+            if (Password.Length >= 6)
             {
-                //1st case
-                case MessageBoxResult.Yes:
-                    /////Insert Data////
+                MessageBoxResult m = MessageBox.Show("Do you relly Insert?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                switch (m)
+                {
+                    //1st case
+                    case MessageBoxResult.Yes:
+                        /////Insert Data////
 
 
-                    String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
-                    String Query = "INSERT INTO `students`(`ID`, `fname`, `lname`, `age`, `sex`, `religion`, `Department`, `Semester`, `Section`, `cgpa`, `phn`, `mail`, `dob`, `location`, `password`) VALUES ('"+ID+"','"+FName+"','"+LName+"','"+Age+"','"+Sex+"','"+Religion+"','"+Department+"','"+Semester+"','"+Section+"','"+CGPA+"','"+Phone+"','"+Email+"','"+DOB+"','"+Location+"','"+Password+"')";
+                        String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+                        String Query = "INSERT INTO `students`(`ID`, `fname`, `lname`, `age`, `sex`, `religion`, `Department`, `Semester`, `Section`, `cgpa`, `phn`, `mail`, `dob`, `location`, `password`) VALUES ('" + ID + "','" + FName + "','" + LName + "','" + Age + "','" + Sex + "','" + Religion + "','" + Department + "','" + Semester + "','" + Section + "','" + CGPA + "','" + Phone + "','" + Email + "','" + DOB + "','" + Location + "','" + Password + "')";
 
 
 
-                    MySqlConnection mycon = new MySqlConnection(Connection);
-                    MySqlCommand myCom = new MySqlCommand(Query, mycon);
-                    mycon.Open();
-                    MySqlDataReader reader = myCom.ExecuteReader(); ;
-                    mycon.Close();
-                    MessageBoxResult result = MessageBox.Show("Data Inserted Successfully");
+                        MySqlConnection mycon = new MySqlConnection(Connection);
+                        MySqlCommand myCom = new MySqlCommand(Query, mycon);
+                        mycon.Open();
+                        MySqlDataReader reader = myCom.ExecuteReader(); ;
+                        mycon.Close();
+                        MessageBoxResult result = MessageBox.Show("Data Inserted Successfully");
 
 
-                    ///Insert Data Close///
+                        ///Insert Data Close///
 
-                    break;
+                        break;
 
-                //2nd Case
-                case MessageBoxResult.No:
-                    break;
+                    //2nd Case
+                    case MessageBoxResult.No:
+                        break;
+                }
+            }
+            else
+            {
+                MessageBoxResult result = MessageBox.Show("Password Should be 6 or More digit");
             }
         
         //////////////////////////////////////////////////////////

@@ -45,3 +45,5 @@ F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Admin_Update.g.cs
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Admin_Update.baml
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\StudentViewSetting.g.cs
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\StudentViewSetting.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\AdminViewSetting.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\AdminViewSetting.baml

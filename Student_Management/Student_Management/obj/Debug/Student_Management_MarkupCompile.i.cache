@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 F:\AAA\Project\Student_Management\Student_Management\App.xaml
-1093092540
+11-1520668472
 
-181511666668
+191336197472
 16909020267
-Admin_Registration.xaml;Admin_Update.xaml;After_Login.xaml;DeanProfile.xaml;Dean_Login.xaml;MainWindow.xaml;StudentRegistration.xaml;StudentViewSetting.xaml;Student_Activity.xaml;Student_Login.xaml;
+AdminViewSetting.xaml;Admin_Registration.xaml;Admin_Update.xaml;After_Login.xaml;DeanProfile.xaml;Dean_Login.xaml;MainWindow.xaml;StudentRegistration.xaml;StudentViewSetting.xaml;Student_Activity.xaml;Student_Login.xaml;
 
-False
+True
 
