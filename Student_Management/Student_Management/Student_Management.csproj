@@ -58,6 +58,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Add_Course.xaml.cs">
+      <DependentUpon>Add_Course.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AdminViewSetting.xaml.cs">
       <DependentUpon>AdminViewSetting.xaml</DependentUpon>
     </Compile>
@@ -67,8 +70,17 @@
     <Compile Include="All_Admin.xaml.cs">
       <DependentUpon>All_Admin.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ALl_Course.xaml.cs">
+      <DependentUpon>ALl_Course.xaml</DependentUpon>
+    </Compile>
     <Compile Include="All_Students.xaml.cs">
       <DependentUpon>All_Students.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ALL_Teachers.xaml.cs">
+      <DependentUpon>ALL_Teachers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CourseViewSetting.xaml.cs">
+      <DependentUpon>CourseViewSetting.xaml</DependentUpon>
     </Compile>
     <Compile Include="StudentRegistration.xaml.cs">
       <DependentUpon>StudentRegistration.xaml</DependentUpon>
@@ -82,6 +94,19 @@
     <Compile Include="Student_Login.xaml.cs">
       <DependentUpon>Student_Login.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TeacherLogin.xaml.cs">
+      <DependentUpon>TeacherLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRegistration.xaml.cs">
+      <DependentUpon>TeacherRegistration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherViewSetting.xaml.cs">
+      <DependentUpon>TeacherViewSetting.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Add_Course.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AdminViewSetting.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -102,7 +127,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ALl_Course.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="All_Students.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ALL_Teachers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CourseViewSetting.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -151,6 +188,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Student_Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TeacherLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TeacherRegistration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TeacherViewSetting.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -18,7 +18,7 @@
         <Menu x:Name="menu" HorizontalAlignment="Left" Height="16" VerticalAlignment="Top" Width="174" Background="#FFACA7A7">
             <MenuItem x:Name="Dean_" Background="#FFF97171" Header="Dean" Click="Dean_go"/>
             <MenuItem Background="#FF8CEE2B" Header="Students" Click="Student_go"/>
-            <MenuItem Background="#FF3ADEC0" Header="Teacher"/>
+            <MenuItem Background="#FF3ADEC0" Header="Teacher" Click="Teacher_Login"/>
         </Menu>
 
     </Grid>

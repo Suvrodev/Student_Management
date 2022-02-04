@@ -141,5 +141,12 @@ namespace Student_Management
             s.Show();
             this.Close();
         }
+
+        private void Teacher_Login(object sender, RoutedEventArgs e)
+        {
+            TeacherLogin t = new TeacherLogin();
+            t.Show();
+            this.Close();
+        }
     }
 }

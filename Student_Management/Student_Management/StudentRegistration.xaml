@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="StudentRegistration" Height="683" Width="525">
     <Grid Margin="6,8,-6,-8">
-        <Label x:Name="label" Content="Students Registration" VerticalAlignment="Top" Height="40" Width="518" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,-1,0"/>
+        <Label x:Name="label" Content="Students Registration" VerticalAlignment="Top" Height="38" Width="507" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,10,0"/>
         <Label x:Name="label1" Content="First Name" HorizontalAlignment="Left" Margin="16,95,0,0" VerticalAlignment="Top" Height="21" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
         <TextBox x:Name="FName_Box" HorizontalAlignment="Left" Height="21" Margin="80,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Background="#FFBCEAE4" FontWeight="Bold"/>
         <Label x:Name="label1_Copy" Content="Last Name" HorizontalAlignment="Left" Margin="273,95,0,0" VerticalAlignment="Top" Height="21" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>

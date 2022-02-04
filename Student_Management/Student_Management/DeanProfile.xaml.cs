@@ -66,5 +66,47 @@ namespace Student_Management
             a.Show();
             this.Close();
         }
+
+        private void Add_Teacher(object sender, RoutedEventArgs e)
+        {
+            TeacherRegistration t = new TeacherRegistration();
+            t.Show();
+            this.Close();
+        }
+
+        private void TeacherViewSetting(object sender, RoutedEventArgs e)
+        {
+            TeacherViewSetting t = new TeacherViewSetting();
+            t.Show();
+            this.Close();
+        }
+
+        private void View_All_Teacher(object sender, RoutedEventArgs e)
+        {
+            ALL_Teachers a = new ALL_Teachers();
+            a.Show();
+            this.Close();
+        }
+
+        private void Add_Subject(object sender, RoutedEventArgs e)
+        {
+            Add_Course a = new Add_Course();
+            a.Show();
+            this.Close();
+        }
+
+        private void CourseViewSetting(object sender, RoutedEventArgs e)
+        {
+            CourseViewSetting c = new CourseViewSetting();
+            c.Show();
+            this.Close();
+        }
+
+        private void View_All_Course(object sender, RoutedEventArgs e)
+        {
+            ALl_Course a = new ALl_Course();
+            a.Show();
+            this.Close();
+        }
     }
 }

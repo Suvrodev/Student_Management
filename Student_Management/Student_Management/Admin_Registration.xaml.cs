@@ -41,7 +41,16 @@ namespace Student_Management
             Skill_Box.Text = "";
             Pass_box.Password = "";
             CPass_box.Password = "";
-            
+
+            Merried.IsChecked = false;
+            Unmerried.IsChecked = false;
+
+            RB_Male.IsChecked = false;
+            RB_Female.IsChecked = false;
+            RB_Other.IsChecked = false;
+            comboBox_rl.SelectedIndex = -1;
+            //comboBox_status.SelectedIndex = -1;
+
         }
 
         private void Reg_Click_btn(object sender, RoutedEventArgs e)

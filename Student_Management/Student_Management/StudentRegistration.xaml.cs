@@ -165,6 +165,19 @@ namespace Student_Management
             Pass_box.Password = "";
             cgpa_box.Text="";
 
+            ///Radio Button
+            RB_Male.IsChecked = false;
+            RB_Female.IsChecked = false;
+            RB_Other.IsChecked = false;
+            ///Religion
+            comboBox_rl.SelectedIndex = -1;
+            ///Department          
+            comboBox_dprtmnt.SelectedIndex = -1;
+            ///Section           
+            comboBox_section.SelectedIndex = -1;
+            ///Semester
+            comboBox_semester.SelectedIndex = -1;
+
         }
     }
 }

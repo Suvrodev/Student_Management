@@ -51,3 +51,17 @@ F:\AAA\Project\Student_Management\Student_Management\obj\Debug\All_Admin.g.cs
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\All_Admin.baml
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\All_Students.g.cs
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\All_Students.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\TeacherRegistration.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\TeacherRegistration.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\TeacherViewSetting.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\TeacherViewSetting.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\ALL_Teachers.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\ALL_Teachers.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Add_Course.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Add_Course.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\CourseViewSetting.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\CourseViewSetting.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\ALl_Course.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\ALl_Course.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\TeacherLogin.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\TeacherLogin.baml
