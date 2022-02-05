@@ -71,3 +71,11 @@ F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Teacher_Own_Updat
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Teacher_Own_Update.baml
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\StudentActivity_2.g.cs
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\StudentActivity_2.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\All_Teacher_By_.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\All_Teacher_By_.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\All_Students_By.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\All_Students_By.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\BloodDonateByStudent.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\BloodDonateByStudent.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Student_Blood_Donation.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Student_Blood_Donation.baml

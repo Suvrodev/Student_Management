@@ -27,7 +27,26 @@ namespace Student_Management
         public String Get_ID = "";
         public String Name = "", Age = "", Sex = "", Rel = "", Department = "", M_S = "", Mail = "", phn = "", DOB = "", Loc = "", Pass = "";
 
-       
+        private void All_Clourse(object sender, RoutedEventArgs e)
+        {
+            ALl_Course a = new ALl_Course();
+            a.Show();
+            this.Close();
+        }
+
+        private void Shw_All_Std(object sender, RoutedEventArgs e)
+        {
+            All_Students_By a = new All_Students_By();
+            a.Show();
+            this.Close();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            All_Teacher_By_ a = new All_Teacher_By_();
+            a.Show();
+            this.Close();
+        }
 
         public TeacherActivity()
         {

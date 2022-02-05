@@ -61,6 +61,10 @@ namespace Student_Management
             var Sex_temp = (ComboBoxItem)comboBox_Sex.SelectedItem;
             Sex = (String)Sex_temp.Content;
 
+            String Blood_Group = comboBox_BloodGroup.Text;
+            String Blood_Donate = comboBox_Blood_Donate.Text;
+            String Vaccinated = comboBox_Vaccinated.Text;
+
             /////Data Retrive//////////
             String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
             String Query = "";
@@ -84,10 +88,22 @@ namespace Student_Management
             {
                 Religion = "%";
             }
-           
+            if (Blood_Group == "ALL")
+            {
+                Blood_Group = "%";
+            }
+            if (Blood_Donate == "ALL")
+            {
+                Blood_Donate = "%";
+            }
+            if (Vaccinated == "ALL")
+            {
+                Vaccinated = "%";
+            }
 
-          //  MessageBox.Show(Department + "\n" + Semester + "\n" + Section + "\n" + Sex + "\n" + Religion);
-            Query = "SELECT * FROM `students` WHERE Department LIKE '"+Department+"' AND Semester LIKE '"+Semester+"' AND Section LIKE '"+Section+"' AND sex LIKE '"+Sex+"' AND religion LIKE '"+Religion+"'";
+
+            //  MessageBox.Show(Department + "\n" + Semester + "\n" + Section + "\n" + Sex + "\n" + Religion);
+            Query = "SELECT * FROM `students` WHERE Department LIKE '"+Department+"' AND Semester LIKE '"+Semester+"' AND Section LIKE '"+Section+"' AND sex LIKE '"+Sex+"' AND religion LIKE '"+Religion+ "'AND Vaccinated LIKE '" + Vaccinated + "'AND Blood_Donate LIKE '" + Blood_Donate + "'AND Blood_Group LIKE '" + Blood_Group + "'";
 
             MySqlConnection mycon = new MySqlConnection(Connection);
             MySqlCommand myCom = new MySqlCommand(Query, mycon);

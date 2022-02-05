@@ -48,7 +48,7 @@ namespace Student_Management
 
             String id = "", pass = "";
             String Fname = "", Lname = "", Age = "", Sex = "", Department = "", Semester = "", Section = "", CGPA = "", Rel = "", Phn = "", Mail = "", DOB = "", Loc = "";
-
+            String Blood_Donate = "", Vaccinated = "", Blood_group="", Last_Donate="";
 
             /////Data Retrive//////////
             String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
@@ -79,6 +79,10 @@ namespace Student_Management
                 DOB = Convert.ToString(reader[12]);
                 Loc = Convert.ToString(reader[13]);
                 pass = Convert.ToString(reader[14]);
+                Blood_Donate = Convert.ToString(reader[15]);
+                Vaccinated = Convert.ToString(reader[16]);
+                Blood_group = Convert.ToString(reader[17]);
+                Last_Donate = Convert.ToString(reader[18]);
 
 
                 // Console.WriteLine(reader[0] + " " + reader[1] + " " + reader[2] + " " + reader[3] + " " + reader[4]);
@@ -91,7 +95,11 @@ namespace Student_Management
              if(ID==id && Password == pass)
              {
                 string A = "hello";
+               
+
+
                 Student_Activity a = new Student_Activity();
+
 
                 a.tb.Text = ID_Box.Text;
                 a.tb_fname.Text = Fname;
@@ -110,6 +118,13 @@ namespace Student_Management
                 a.tbx_phn.Text = Phn;   
                 a.tbx_loc.Text = Loc;
 
+                ///////////////////////////////
+                a.Blood_Group = Blood_group;
+                a.Blood_Donate = Blood_Donate;
+                a.Last_Donate = Last_Donate;
+
+                /////////////////////////////
+
                 a.Show();
                 this.Close();
              }
@@ -118,6 +133,13 @@ namespace Student_Management
                  MessageBoxResult result = MessageBox.Show("ID or Password Not matched");
              }
 
+        }
+
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+            MainWindow a = new MainWindow();
+            a.Show();
+            this.Close();
         }
     }
 }

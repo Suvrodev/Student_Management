@@ -8,13 +8,16 @@
         Title="TeacherActivity" Height="350" Width="525">
     <Grid>
         <Label x:Name="label" Content="Teacher Profile" VerticalAlignment="Top" Height="40" Width="518" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="-3,0,2,0"/>
-        <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="297,91,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Width="153" Background="#FF53C9D4" Height="21" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold"/>
-        <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="189,59,0,0" TextWrapping="Wrap" Text="Smeone" VerticalAlignment="Top" Width="318" Background="#FF69E8D1" RenderTransformOrigin="1.462,-0.459" Height="27" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20"/>
-        <TextBlock x:Name="for_id_Copy" HorizontalAlignment="Left" Margin="231,91,0,0" TextWrapping="Wrap" Text="Your ID:" VerticalAlignment="Top" Width="66" Background="#FF53C9D4" Height="21" RenderTransformOrigin="1.269,2.737" FontSize="18"/>
+        <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="297,99,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Width="153" Background="#FF53C9D4" Height="21" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold"/>
+        <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="189,67,0,0" TextWrapping="Wrap" Text="Smeone" VerticalAlignment="Top" Width="318" Background="#FF69E8D1" RenderTransformOrigin="1.462,-0.459" Height="27" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20"/>
+        <TextBlock x:Name="for_id_Copy" HorizontalAlignment="Left" Margin="231,99,0,0" TextWrapping="Wrap" Text="Your ID:" VerticalAlignment="Top" Width="66" Background="#FF53C9D4" Height="21" RenderTransformOrigin="1.269,2.737" FontSize="18"/>
         <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="6,125,0,0" VerticalAlignment="Top" Height="149" Width="492"/>
         <Button x:Name="button" Content="Load Data" HorizontalAlignment="Left" Margin="202,289,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="Show_btn"/>
-        <Menu x:Name="menu" HorizontalAlignment="Left" Height="17" VerticalAlignment="Top" Width="103" Margin="0,45,0,0">
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="229" Margin="0,45,0,0">
             <MenuItem Background="#FF97E6EE" FontSize="10" Header="Update" Click="Update_Teacher_Own"/>
+            <MenuItem Background="#FFA1E289" FontSize="10" Header="Students" Height="17" Width="57" Click="Shw_All_Std"/>
+            <MenuItem Background="#FFCC74F5" FontSize="10" Header="Teacher" Height="17" Width="57" Click="MenuItem_Click"/>
+            <MenuItem Background="#FFE9F574" FontSize="10" Header="Course" Height="17" Width="57" Click="All_Clourse"/>
         </Menu>
 
     </Grid>

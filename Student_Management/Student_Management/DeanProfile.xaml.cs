@@ -108,5 +108,12 @@ namespace Student_Management
             a.Show();
             this.Close();
         }
+
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+            MainWindow a = new MainWindow();
+            a.Show();
+            this.Close();
+        }
     }
 }

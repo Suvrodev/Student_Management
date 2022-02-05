@@ -10,6 +10,7 @@
         <Label x:Name="label" Content="About Course" VerticalAlignment="Top" Height="40" Width="518" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="-3,0,2,0"/>
         <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="94,123,0,0" VerticalAlignment="Top" Height="147" Width="617"/>
         <Button x:Name="button" Content="Show" HorizontalAlignment="Left" Margin="65,72,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="Show_btn"/>
+        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="22,289,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
 
     </Grid>
 </Window>

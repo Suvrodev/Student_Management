@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Student_Management"
         mc:Ignorable="d"
-        Title="All_Students" Height="297" Width="1135">
+        Title="All_Students" Height="297" Width="1400">
     <Grid>
         <Label x:Name="label" Content="View Students" VerticalAlignment="Top" Height="34" Width="1292" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" Height="151" Width="1107"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" Height="147" Width="1332"/>
         <Label x:Name="label1_Copy2" Content="Sex" HorizontalAlignment="Left" Margin="474,43,0,0" VerticalAlignment="Top" Height="21" Width="33" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
         <Label x:Name="label1_Copy3" Content="Semester" HorizontalAlignment="Left" Margin="326,44,0,0" VerticalAlignment="Top" Height="22" Width="70" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
         <Label x:Name="label1_Copy4" Content="Religion" HorizontalAlignment="Left" Margin="610,41,0,0" VerticalAlignment="Top" Height="22" Width="44" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.5,0.5">
@@ -65,7 +65,31 @@
             <ComboBoxItem Content="Female"/>
             <ComboBoxItem Content="Other"/>
         </ComboBox>
-        <Button x:Name="button" Content="Show" HorizontalAlignment="Left" Margin="778,42,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="Show_btn"/>
+        <Button x:Name="button" Content="Show" HorizontalAlignment="Left" Margin="1267,47,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="Show_btn"/>
+        <Label x:Name="label1_Copy16" Content="Vaccinated" HorizontalAlignment="Left" Margin="786,43,0,0" VerticalAlignment="Top" Height="21" Width="62" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <ComboBox x:Name="comboBox_Vaccinated" HorizontalAlignment="Left" Margin="864,44,0,0" VerticalAlignment="Top" Width="63">
+            <ComboBoxItem Content="ALL"/>
+            <ComboBoxItem Content="Yes"/>
+            <ComboBoxItem Content="No"/>
+        </ComboBox>
+        <Label x:Name="label1_Copy17" Content="Blood Donate" HorizontalAlignment="Left" Margin="1103,46,0,0" VerticalAlignment="Top" Height="25" Width="64" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <ComboBox x:Name="comboBox_Blood_Donate" HorizontalAlignment="Left" Margin="1181,46,0,0" VerticalAlignment="Top" Width="70" Height="21">
+            <ComboBoxItem Content="ALL"/>
+            <ComboBoxItem Content="Yes"/>
+            <ComboBoxItem Content="No"/>
+        </ComboBox>
+        <Label x:Name="label1_Copy18" Content="Blood Group" HorizontalAlignment="Left" Margin="948,44,0,0" VerticalAlignment="Top" Height="22" Width="72" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <ComboBox x:Name="comboBox_BloodGroup" HorizontalAlignment="Left" Margin="1035,46,0,0" VerticalAlignment="Top" Width="51" Height="20">
+            <ComboBoxItem Content="ALL"/>
+            <ComboBoxItem Content="A+"/>
+            <ComboBoxItem Content="A-"/>
+            <ComboBoxItem Content="B+"/>
+            <ComboBoxItem Content="B-"/>
+            <ComboBoxItem Content="AB+"/>
+            <ComboBoxItem Content="AB-"/>
+            <ComboBoxItem Content="O+"/>
+            <ComboBoxItem Content="O-"/>
+        </ComboBox>
 
     </Grid>
 </Window>

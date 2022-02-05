@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Student_Management"
         mc:Ignorable="d"
-        Title="StudentViewSetting" Height="687" Width="525">
+        Title="StudentViewSetting" Height="750" Width="525">
     <Grid>
         <Label x:Name="label1" Content="Students Information Setting" VerticalAlignment="Top" Height="40" Width="518" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="-3,2,2,0"/>
         <Label x:Name="label1_Copy12" Content="ID" HorizontalAlignment="Left" Margin="71,93,0,0" VerticalAlignment="Top" Height="20" Width="33" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
@@ -13,8 +13,8 @@
         <Label x:Name="label1_Copy" Content="Search ID" HorizontalAlignment="Left" Margin="52,62,0,0" VerticalAlignment="Top" Height="20" Width="52" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
         <TextBox x:Name="ID_box" HorizontalAlignment="Left" Height="21" Margin="116,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249" Background="#FFBCEAE4" FontWeight="Bold"/>
         <Button x:Name="button" Content="Search" HorizontalAlignment="Left" Margin="377,61,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="search_btn"/>
-        <Button x:Name="button_Copy" Content="Modify" HorizontalAlignment="Left" Margin="62,509,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="modify_btn"/>
-        <Button x:Name="button_Copy1" Content="Reset" HorizontalAlignment="Left" Margin="290,509,0,0" VerticalAlignment="Top" Width="75" Background="#FFD08BEA" Click="Reset_btn"/>
+        <Button x:Name="button_Copy" Content="Modify" HorizontalAlignment="Left" Margin="65,657,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="modify_btn"/>
+        <Button x:Name="button_Copy1" Content="Reset" HorizontalAlignment="Left" Margin="293,657,0,0" VerticalAlignment="Top" Width="75" Background="#FFD08BEA" Click="Reset_btn"/>
         <Label x:Name="label1_Copy1" Content="First Name" HorizontalAlignment="Left" Margin="52,126,0,0" VerticalAlignment="Top" Height="22" Width="52" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
         <TextBox x:Name="FName_Box" HorizontalAlignment="Left" Height="21" Margin="118,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Background="#FFBCEAE4" FontWeight="Bold"/>
         <Label x:Name="label1_Copy2" Content="Last Name" HorizontalAlignment="Left" Margin="278,127,0,0" VerticalAlignment="Top" Height="21" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
@@ -72,8 +72,31 @@
         <Label x:Name="label1_Copy14" Content="Location" HorizontalAlignment="Left" Margin="62,410,0,0" VerticalAlignment="Top" Height="20" Width="42" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.526,2.13"/>
         <Label x:Name="label1_Copy15" Content="Password" HorizontalAlignment="Left" Margin="49,445,0,0" VerticalAlignment="Top" Height="21" Width="57" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.526,2.13"/>
         <TextBox x:Name="Loc_box" HorizontalAlignment="Left" Height="21" Margin="116,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Background="#FFBCEAE4" FontWeight="Bold"/>
-        <Button x:Name="button_Copy2" Content="Delete" HorizontalAlignment="Left" Margin="173,509,0,0" VerticalAlignment="Top" Width="75" Background="#FFEA5570" RenderTransformOrigin="1.439,0.427" Click="Delete_btn"/>
+        <Button x:Name="button_Copy2" Content="Delete" HorizontalAlignment="Left" Margin="176,657,0,0" VerticalAlignment="Top" Width="75" Background="#FFEA5570" RenderTransformOrigin="1.439,0.427" Click="Delete_btn"/>
         <TextBox x:Name="pass_box" HorizontalAlignment="Left" Height="21" Margin="116,445,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" Background="#FFBCEAE4" FontWeight="Bold"/>
+        <Label x:Name="label1_Copy16" Content="Vaccinated" HorizontalAlignment="Left" Margin="38,482,0,0" VerticalAlignment="Top" Height="22" Width="70" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <ComboBox x:Name="comboBox_Vaccinated" HorizontalAlignment="Left" Margin="118,482,0,0" VerticalAlignment="Top" Width="106">
+            <ComboBoxItem Content="Yes"/>
+            <ComboBoxItem Content="No"/>
+        </ComboBox>
+        <Label x:Name="label1_Copy17" Content="Blood Donate" HorizontalAlignment="Left" Margin="36,520,0,0" VerticalAlignment="Top" Height="22" Width="72" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <ComboBox x:Name="comboBox_Blood_Donate" HorizontalAlignment="Left" Margin="118,520,0,0" VerticalAlignment="Top" Width="106">
+            <ComboBoxItem Content="Yes"/>
+            <ComboBoxItem Content="No"/>
+        </ComboBox>
+        <Label x:Name="label1_Copy18" Content="Blood Group" HorizontalAlignment="Left" Margin="36,559,0,0" VerticalAlignment="Top" Height="22" Width="72" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <ComboBox x:Name="comboBox_BloodGroup" HorizontalAlignment="Left" Margin="118,559,0,0" VerticalAlignment="Top" Width="106">
+            <ComboBoxItem Content="A+"/>
+            <ComboBoxItem Content="A-"/>
+            <ComboBoxItem Content="B+"/>
+            <ComboBoxItem Content="B-"/>
+            <ComboBoxItem Content="AB+"/>
+            <ComboBoxItem Content="AB-"/>
+            <ComboBoxItem Content="O+"/>
+            <ComboBoxItem Content="O-"/>
+        </ComboBox>
+        <Label x:Name="label1_Copy19" Content="Date of Last Donate" HorizontalAlignment="Left" Margin="19,598,0,0" VerticalAlignment="Top" Height="21" Width="87" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.526,2.13"/>
+        <TextBox x:Name="last_donate_box_" HorizontalAlignment="Left" Height="21" Margin="114,598,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Background="#FFBCEAE4" FontWeight="Bold"/>
 
     </Grid>
 </Window>

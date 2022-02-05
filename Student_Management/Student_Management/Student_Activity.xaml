@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Student_Management"
         mc:Ignorable="d"
-        Title="Student_Activity" Height="675" Width="525">
+        Title="Student_Activity" Height="716" Width="525">
     <Grid Margin="0,0,-8,-2">
         <Label x:Name="label" Content="Student Activity" VerticalAlignment="Top" Height="40" Width="518" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="-1,0,0,0"/>
         <TextBlock x:Name="tb" HorizontalAlignment="Left" Margin="143,97,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Height="19" Width="127" FontWeight="Bold" Background="#FF86FB9C" Cursor="None"/>
@@ -45,11 +45,14 @@
         <TextBox x:Name="tbx_new_pass" HorizontalAlignment="Left" Height="19" Margin="158,580,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Background="#FF86FB9C"/>
         <TextBox x:Name="tbx_new_rpass" HorizontalAlignment="Left" Height="19" Margin="158,604,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Background="#FF86FB9C"/>
         <Button x:Name="button_Copy" Content="Update Password" HorizontalAlignment="Left" Margin="326,603,0,0" VerticalAlignment="Top" Width="122" Background="#FF0CC6CF" Click="Update_Password"/>
-        <Menu x:Name="menu" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="193" Margin="0,45,0,0">
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="369" Margin="0,45,0,0">
             <MenuItem Background="#FF97E6EE" FontSize="10" Header="Course" Click="Course"/>
-            <MenuItem Background="#FFA1E289" FontSize="10" Header="Blood Donate" Height="22" Width="79"/>
+            <MenuItem Background="#FFA1E289" FontSize="10" Header="Blood Donate" Height="22" Width="79" Click="Blood_Donation"/>
             <MenuItem Background="#FFE9F574" FontSize="10" Header="Information" Height="24" Width="69"/>
+            <MenuItem Background="#FFA1E289" FontSize="10" Header="Teacher List" Height="22" Width="79" Click="MenuItem_Click"/>
+            <MenuItem Background="#FFE9F574" FontSize="10" Header="Students List" Height="24" Width="69" Click="All_Students"/>
         </Menu>
+        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="25,657,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
 
     </Grid>
 </Window>

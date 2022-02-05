@@ -20,6 +20,7 @@ namespace Student_Management
     /// </summary>
     public partial class Student_Activity : Window
     {
+       public String Blood_Donate = "", Blood_Group = "", Last_Donate = "";
         public Student_Activity()
         {
             InitializeComponent();
@@ -153,6 +154,100 @@ namespace Student_Management
             String ID = tb.Text;
             StudentActivity_2 s = new StudentActivity_2();
             s.Get_ID = ID;
+            s.Show();
+            this.Close();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            All_Teacher_By_ a = new All_Teacher_By_();
+            a.Show();
+            this.Close();
+        }
+
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+            MainWindow a = new MainWindow();
+            a.Show();
+            this.Close();
+        }
+
+        private void All_Students(object sender, RoutedEventArgs e)
+        {
+            All_Students_By a = new All_Students_By();
+            a.Show();
+            this.Close();
+        }
+
+        private void Blood_Donation(object sender, RoutedEventArgs e)
+        {
+            Student_Blood_Donation s = new Student_Blood_Donation();
+
+            s.tb.Text = tb.Text;
+            s.tb_fname.Text = tb_fname.Text;
+            s.tb_lname.Text = tb_lname.Text;
+            s.last_donate_box_.Text = Last_Donate;
+
+
+            ///Blood Donate         
+            if (Blood_Donate == "Yes")
+            {
+                s.comboBox_Blood_Donate.SelectedIndex = 0;
+            }
+            else if (Blood_Donate == "No")
+            {
+                s.comboBox_Blood_Donate.SelectedIndex = 1;
+            }
+            else if (Blood_Donate == "")
+            {
+                s.comboBox_Blood_Donate.SelectedIndex = 1;
+            }
+            else
+            {
+               // s.comboBox_rl.SelectedIndex = -1;
+            }
+
+   
+
+
+            ///Blood Group
+            if (Blood_Group == "A+")
+            {
+                s.comboBox_BloodGroup.SelectedIndex = 0;
+            }
+            else if (Blood_Group == "A-")
+            {
+                s.comboBox_BloodGroup.SelectedIndex = 1;
+            }
+            else if (Blood_Group == "B+")
+            {
+                s.comboBox_BloodGroup.SelectedIndex = 2;
+            }
+            else if (Blood_Group == "B-")
+            {
+                s.comboBox_BloodGroup.SelectedIndex = 3;
+            }
+            else if (Blood_Group == "AB+")
+            {
+                s.comboBox_BloodGroup.SelectedIndex = 4;
+            }
+            else if (Blood_Group == "AB-")
+            {
+                s.comboBox_BloodGroup.SelectedIndex = 5;
+            }
+            else if (Blood_Group == "O+")
+            {
+                s.comboBox_BloodGroup.SelectedIndex = 6;
+            }
+            else if (Blood_Group == "O-")
+            {
+                s.comboBox_BloodGroup.SelectedIndex = 7;
+            }
+            else
+            {
+                s.comboBox_BloodGroup.SelectedIndex = -1;
+            }
+
             s.Show();
             this.Close();
         }

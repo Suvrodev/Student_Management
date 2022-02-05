@@ -51,5 +51,12 @@ namespace Student_Management
         {
             ID_Box.Text = "";
         }
+
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+            MainWindow a = new MainWindow();
+            a.Show();
+            this.Close();
+        }
     }
 }

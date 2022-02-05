@@ -46,6 +46,7 @@ namespace Student_Management
                 String Password = pass_box.Text;
                 String CGPA = cgpa_box.Text;
                 String DOB = dob_box.Text;
+                String Last_Donate = last_donate_box_.Text;
                 String Sex = "";
 
 
@@ -62,8 +63,8 @@ namespace Student_Management
                 {
                     Sex = "other";
                 }
-                var Religion_Temp = (ComboBoxItem)comboBox_rl.SelectedItem;
-                String Religion = (String)Religion_Temp.Content;
+               
+                String Religion = comboBox_rl.Text;
 
 
                 var Department_Temp = (ComboBoxItem)comboBox_dprtmnt.SelectedItem;
@@ -74,6 +75,11 @@ namespace Student_Management
 
                 var Section_Temp = (ComboBoxItem)comboBox_section.SelectedItem;
                 String Section = (String)Section_Temp.Content;
+
+                String Vaccinated = comboBox_Vaccinated.Text;
+                String Blood_Donate = comboBox_Blood_Donate.Text;
+                String Blood_Group = comboBox_BloodGroup.Text;
+                
 
                 if (Password.Length >= 5)
                 {
@@ -86,7 +92,7 @@ namespace Student_Management
                             /////Update Data////
 
                             String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
-                            String Query = "UPDATE `students` SET `ID`='" + ID + "',`fname`='" + FName + "',`lname`='" + LName + "',`age`='" + Age + "',`sex`='" + Sex + "',`religion`='" + Religion + "',`Department`='" + Department + "',`Semester`='" + Semester + "',`Section`='" + Section + "',`cgpa`='" + CGPA + "',`phn`='" + Phone + "',`mail`='" + Email + "',`dob`='" + DOB + "',`location`='" + Location + "',`password`='" + Password + "' WHERE id='" + ID + "';";
+                            String Query = "UPDATE `students` SET `ID`='" + ID + "',`fname`='" + FName + "',`lname`='" + LName + "',`age`='" + Age + "',`sex`='" + Sex + "',`religion`='" + Religion + "',`Department`='" + Department + "',`Semester`='" + Semester + "',`Section`='" + Section + "',`cgpa`='" + CGPA + "',`phn`='" + Phone + "',`mail`='" + Email + "',`dob`='" + DOB + "',`location`='" + Location + "',`password`='" + Password + "',`Blood_Donate`='"+Blood_Donate+"',`Vaccinated`='"+Vaccinated+ "',`Blood_Group`='"+Blood_Group+ "',`Last_Donate`='"+Last_Donate+"'  WHERE id='" + ID + "'";
 
 
 
@@ -163,6 +169,7 @@ namespace Student_Management
             //  MessageBoxResult result = MessageBox.Show(""+Given_ID);
             String id = "", pass = "";
             String Fname = "", Lname = "", Age = "", Sex = "", Department = "", Semester = "", Section = "", CGPA = "", Rel = "", Phn = "", Mail = "", DOB = "", Loc = "";
+            String Vaccinated = "", Blood_Donate = "",Blood_group="",Last_Donate="";
             /////Data Retrive//////////
             String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
             // String Query = "SELECT `"+ID+"`, `"+Password+"`  FROM `admin` WHERE ID='"+ID+"';";
@@ -192,6 +199,10 @@ namespace Student_Management
                 DOB = Convert.ToString(reader[12]);
                 Loc = Convert.ToString(reader[13]);
                 pass = Convert.ToString(reader[14]);
+                Blood_Donate= Convert.ToString(reader[15]);
+                Vaccinated= Convert.ToString(reader[16]);
+                Blood_group= Convert.ToString(reader[17]);
+                Last_Donate= Convert.ToString(reader[18]);
             }
             mycon.Close();
 
@@ -205,6 +216,7 @@ namespace Student_Management
             Phn_Box.Text = Phn;
             Loc_box.Text = Loc;
             pass_box.Text = pass;
+            last_donate_box_.Text = Last_Donate;
 
            
             ///Radio Button
@@ -345,6 +357,83 @@ namespace Student_Management
             }
 
 
+            ///Blood Donate         
+            if (Blood_Donate == "Yes")
+            {
+                comboBox_Blood_Donate.SelectedIndex = 0;
+            }
+            else if (Blood_Donate == "No")
+            {
+                comboBox_Blood_Donate.SelectedIndex = 1;
+            }
+            else if (Blood_Donate == "")
+            {
+                comboBox_Blood_Donate.SelectedIndex = 1;
+            }
+            else
+            {
+                comboBox_rl.SelectedIndex = -1;
+            }
+
+
+            ///Vaccinated
+            if (Vaccinated == "Yes")
+            {
+                comboBox_Vaccinated.SelectedIndex = 0;
+            }
+            else if (Blood_Donate == "No")
+            {
+                comboBox_Vaccinated.SelectedIndex = 1;
+            }
+            else if (Blood_Donate == "")
+            {
+                comboBox_Vaccinated.SelectedIndex = 1;
+            }
+            else
+            {
+                //comboBox_rl.SelectedIndex = -1;
+            }
+
+
+            ///Blood Group
+            if (Blood_group == "A+")
+            {
+                comboBox_BloodGroup.SelectedIndex = 0;
+            }
+            else if (Blood_group == "A-")
+            {
+                comboBox_BloodGroup.SelectedIndex = 1;
+            }
+            else if (Blood_group == "B+")
+            {
+                comboBox_BloodGroup.SelectedIndex = 2;
+            }
+            else if (Blood_group == "B-")
+            {
+                comboBox_BloodGroup.SelectedIndex = 3;
+            }
+            else if (Blood_group == "AB+")
+            {
+                comboBox_BloodGroup.SelectedIndex = 4;
+            }
+            else if (Blood_group == "AB-")
+            {
+                comboBox_BloodGroup.SelectedIndex = 5;
+            }
+            else if (Blood_group == "O+")
+            {
+                comboBox_BloodGroup.SelectedIndex = 6;
+            }
+            else if (Blood_group == "O-")
+            {
+                comboBox_BloodGroup.SelectedIndex = 7;
+            }
+            else
+            {
+                comboBox_BloodGroup.SelectedIndex = -1;
+            }
+
+
             if (id == "")
             {
                 MessageBoxResult result = MessageBox.Show("Invalid ID");
@@ -363,6 +452,7 @@ namespace Student_Management
             Phn_Box.Text = "";
             Loc_box.Text = "";
             pass_box.Text = "";
+            last_donate_box_.Text = "";
 
             ///Radio Button
            
@@ -376,7 +466,13 @@ namespace Student_Management
             ///Section           
                 comboBox_section.SelectedIndex = -1;
             ///Semester
-                comboBox_semester.SelectedIndex = -1;      
+                comboBox_semester.SelectedIndex = -1;
+            ///Vaccinated
+            comboBox_Vaccinated.SelectedIndex = -1;
+            //////
+            comboBox_Blood_Donate.SelectedIndex = -1;
+            //////
+            comboBox_BloodGroup.SelectedIndex = -1;
         }
 
         

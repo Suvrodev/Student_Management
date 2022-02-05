@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 F:\AAA\Project\Student_Management\Student_Management\App.xaml
-231273253978
+27134040674
 
-31931154372
+352146991629
 16909020267
-Add_Course.xaml;AdminViewSetting.xaml;Admin_Registration.xaml;Admin_Update.xaml;After_Login.xaml;All_Admin.xaml;ALl_Course.xaml;All_Students.xaml;ALL_Teachers.xaml;CourseViewSetting.xaml;DeanProfile.xaml;Dean_Login.xaml;MainWindow.xaml;StudentActivity_2.xaml;StudentRegistration.xaml;StudentViewSetting.xaml;Student_Activity.xaml;Student_Login.xaml;TeacherActivity.xaml;TeacherLogin.xaml;TeacherRegistration.xaml;TeacherViewSetting.xaml;Teacher_Own_Update.xaml;
+Add_Course.xaml;AdminViewSetting.xaml;Admin_Registration.xaml;Admin_Update.xaml;After_Login.xaml;All_Admin.xaml;ALl_Course.xaml;All_Students.xaml;All_Students_By.xaml;ALL_Teachers.xaml;All_Teacher_By_.xaml;BloodDonateByStudent.xaml;CourseViewSetting.xaml;DeanProfile.xaml;Dean_Login.xaml;MainWindow.xaml;StudentActivity_2.xaml;StudentRegistration.xaml;StudentViewSetting.xaml;Student_Activity.xaml;Student_Blood_Donation.xaml;Student_Login.xaml;TeacherActivity.xaml;TeacherLogin.xaml;TeacherRegistration.xaml;TeacherViewSetting.xaml;Teacher_Own_Update.xaml;
 
-False
+True
 
