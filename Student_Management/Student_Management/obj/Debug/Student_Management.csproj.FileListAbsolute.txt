@@ -65,3 +65,7 @@ F:\AAA\Project\Student_Management\Student_Management\obj\Debug\ALl_Course.g.cs
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\ALl_Course.baml
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\TeacherLogin.g.cs
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\TeacherLogin.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\TeacherActivity.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\TeacherActivity.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Teacher_Own_Update.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Teacher_Own_Update.baml

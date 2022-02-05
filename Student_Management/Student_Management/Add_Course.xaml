@@ -8,19 +8,19 @@
         Title="Add_Course" Height="347" Width="525">
     <Grid Margin="-1,0,1,0">
         <Label x:Name="label" Content="Subject Add" VerticalAlignment="Top" Height="32" Width="507" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,10,0"/>
-        <Label x:Name="label1" Content="course Name" HorizontalAlignment="Left" Margin="136,87,0,0" VerticalAlignment="Top" Height="21" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <TextBox x:Name="FName_Box" HorizontalAlignment="Left" Height="21" Margin="206,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Background="#FFBCEAE4" FontWeight="Bold"/>
-        <Label x:Name="label1_Copy3" Content="Semester" HorizontalAlignment="Left" Margin="136,157,0,0" VerticalAlignment="Top" Height="21" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <Label x:Name="label1_Copy12" Content="Course ID" HorizontalAlignment="Left" Margin="147,53,0,0" VerticalAlignment="Top" Height="20" Width="48" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <TextBox x:Name="ID_box" HorizontalAlignment="Left" Height="20" Margin="206,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Background="#FFBCEAE4" FontWeight="Bold"/>
-        <Label x:Name="label1_Copy9" Content="Department" HorizontalAlignment="Left" Margin="134,123,0,0" VerticalAlignment="Top" Height="22" Width="61" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <ComboBox x:Name="comboBox_dprtmnt" HorizontalAlignment="Left" Margin="208,123,0,0" VerticalAlignment="Top" Width="106">
+        <Label x:Name="label1" Content="course Name" HorizontalAlignment="Left" Margin="71,86,0,0" VerticalAlignment="Top" Height="21" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <TextBox x:Name="FName_Box" HorizontalAlignment="Left" Height="20" Margin="143,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" Background="#FFBCEAE4" FontWeight="Bold"/>
+        <Label x:Name="label1_Copy3" Content="Semester" HorizontalAlignment="Left" Margin="71,156,0,0" VerticalAlignment="Top" Height="21" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <Label x:Name="label1_Copy12" Content="Course ID" HorizontalAlignment="Left" Margin="82,52,0,0" VerticalAlignment="Top" Height="20" Width="48" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <TextBox x:Name="ID_box" HorizontalAlignment="Left" Height="20" Margin="141,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Background="#FFBCEAE4" FontWeight="Bold"/>
+        <Label x:Name="label1_Copy9" Content="Department" HorizontalAlignment="Left" Margin="69,122,0,0" VerticalAlignment="Top" Height="22" Width="61" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <ComboBox x:Name="comboBox_dprtmnt" HorizontalAlignment="Left" Margin="143,122,0,0" VerticalAlignment="Top" Width="106">
             <ComboBoxItem Content="CSE"/>
             <ComboBoxItem Content="EEE"/>
             <ComboBoxItem Content="CIVIL"/>
             <ComboBoxItem Content="BBA"/>
         </ComboBox>
-        <ComboBox x:Name="comboBox_semester" HorizontalAlignment="Left" Margin="208,157,0,0" VerticalAlignment="Top" Width="106">
+        <ComboBox x:Name="comboBox_semester" HorizontalAlignment="Left" Margin="143,156,0,0" VerticalAlignment="Top" Width="106">
             <ComboBoxItem Content="1_1"/>
             <ComboBoxItem Content="1_2"/>
             <ComboBoxItem Content="1_3"/>
@@ -34,10 +34,10 @@
             <ComboBoxItem Content="4_2"/>
             <ComboBoxItem Content="4_3"/>
         </ComboBox>
-        <Label x:Name="label1_Copy" Content="Course Teacher" HorizontalAlignment="Left" Margin="122,190,0,0" VerticalAlignment="Top" Height="22" Width="73" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <ComboBox x:Name="comboBox_Teacher_" HorizontalAlignment="Left" Margin="208,190,0,0" VerticalAlignment="Top" Width="106"/>
-        <Button x:Name="button" Content="Submit" HorizontalAlignment="Left" Margin="162,232,0,0" VerticalAlignment="Top" Width="57" Background="#FF0CC6CF" Click="Reg_Click_btn"/>
-        <Button x:Name="button_Copy" Content="Reset" HorizontalAlignment="Left" Margin="245,232,0,0" VerticalAlignment="Top" Width="53" Background="#FFE84066" Click="Reset_btn"/>
+        <Label x:Name="label1_Copy" Content="Course Teacher" HorizontalAlignment="Left" Margin="57,189,0,0" VerticalAlignment="Top" Height="22" Width="73" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
+        <ComboBox x:Name="comboBox_Teacher_" HorizontalAlignment="Left" Margin="143,189,0,0" VerticalAlignment="Top" Width="179"/>
+        <Button x:Name="button" Content="Submit" HorizontalAlignment="Left" Margin="97,231,0,0" VerticalAlignment="Top" Width="57" Background="#FF0CC6CF" Click="Reg_Click_btn"/>
+        <Button x:Name="button_Copy" Content="Reset" HorizontalAlignment="Left" Margin="180,231,0,0" VerticalAlignment="Top" Width="53" Background="#FFE84066" Click="Reset_btn"/>
 
     </Grid>
 </Window>

@@ -23,6 +23,7 @@ namespace Student_Management
     /// </summary>
     public partial class All_Admin : Window
     {
+        
         public All_Admin()
         {
             InitializeComponent();

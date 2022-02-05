@@ -94,6 +94,9 @@
     <Compile Include="Student_Login.xaml.cs">
       <DependentUpon>Student_Login.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TeacherActivity.xaml.cs">
+      <DependentUpon>TeacherActivity.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TeacherLogin.xaml.cs">
       <DependentUpon>TeacherLogin.xaml</DependentUpon>
     </Compile>
@@ -102,6 +105,9 @@
     </Compile>
     <Compile Include="TeacherViewSetting.xaml.cs">
       <DependentUpon>TeacherViewSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_Own_Update.xaml.cs">
+      <DependentUpon>Teacher_Own_Update.xaml</DependentUpon>
     </Compile>
     <Page Include="Add_Course.xaml">
       <SubType>Designer</SubType>
@@ -191,6 +197,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="TeacherActivity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TeacherLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -200,6 +210,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TeacherViewSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Teacher_Own_Update.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

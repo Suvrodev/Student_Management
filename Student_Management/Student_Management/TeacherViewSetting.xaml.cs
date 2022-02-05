@@ -181,6 +181,9 @@ namespace Student_Management
             comboBox_MS.SelectedIndex = -1;
         }
 
+        ///////
+        ///Search Button/////
+        ///////////
         private void search_btn(object sender, RoutedEventArgs e)
         {
             String Given_ID = ID_box_s.Text;

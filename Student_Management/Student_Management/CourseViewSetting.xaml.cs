@@ -60,6 +60,7 @@ namespace Student_Management
             else
             {
                 ////////////////////////
+                String Given_ID = ID_box_s.Text;
                 String ID = ID_box.Text;
                 String Name = FName_Box.Text;
                
@@ -85,7 +86,7 @@ namespace Student_Management
                             /////Update Data////
 
                             String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
-                            String Query = "UPDATE `course` SET `ID`='" + ID + "',`Name`='" + Name + "',`Department`='" + Department + "',`Semester`='" + Semester + "',`C_Teacher`='" + C_T + "' WHERE id='" + ID + "'";
+                            String Query = "UPDATE `course` SET `ID`='"+ID+ "',`Name`='"+Name+ "',`Department`='"+Department+ "',`Semester`='"+Semester+ "',`C_Teacher`='"+C_T+ "' WHERE id='"+Given_ID+"'";
 
 
 
