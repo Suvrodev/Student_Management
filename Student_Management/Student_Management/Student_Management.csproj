@@ -82,6 +82,9 @@
     <Compile Include="CourseViewSetting.xaml.cs">
       <DependentUpon>CourseViewSetting.xaml</DependentUpon>
     </Compile>
+    <Compile Include="StudentActivity_2.xaml.cs">
+      <DependentUpon>StudentActivity_2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StudentRegistration.xaml.cs">
       <DependentUpon>StudentRegistration.xaml</DependentUpon>
     </Compile>
@@ -181,6 +184,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="StudentActivity_2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="StudentRegistration.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

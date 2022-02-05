@@ -147,5 +147,14 @@ namespace Student_Management
             }
 
         }
+
+        private void Course(object sender, RoutedEventArgs e)
+        {
+            String ID = tb.Text;
+            StudentActivity_2 s = new StudentActivity_2();
+            s.Get_ID = ID;
+            s.Show();
+            this.Close();
+        }
     }
 }

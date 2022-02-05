@@ -45,6 +45,11 @@
         <TextBox x:Name="tbx_new_pass" HorizontalAlignment="Left" Height="19" Margin="158,580,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Background="#FF86FB9C"/>
         <TextBox x:Name="tbx_new_rpass" HorizontalAlignment="Left" Height="19" Margin="158,604,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Background="#FF86FB9C"/>
         <Button x:Name="button_Copy" Content="Update Password" HorizontalAlignment="Left" Margin="326,603,0,0" VerticalAlignment="Top" Width="122" Background="#FF0CC6CF" Click="Update_Password"/>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="193" Margin="0,45,0,0">
+            <MenuItem Background="#FF97E6EE" FontSize="10" Header="Course" Click="Course"/>
+            <MenuItem Background="#FFA1E289" FontSize="10" Header="Blood Donate" Height="22" Width="79"/>
+            <MenuItem Background="#FFE9F574" FontSize="10" Header="Information" Height="24" Width="69"/>
+        </Menu>
 
     </Grid>
 </Window>
