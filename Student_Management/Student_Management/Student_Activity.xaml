@@ -48,7 +48,7 @@
         <Menu x:Name="menu" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="369" Margin="0,45,0,0">
             <MenuItem Background="#FF97E6EE" FontSize="10" Header="Course" Click="Course"/>
             <MenuItem Background="#FFA1E289" FontSize="10" Header="Blood Donate" Height="22" Width="79" Click="Blood_Donation"/>
-            <MenuItem Background="#FFE9F574" FontSize="10" Header="Information" Height="24" Width="69"/>
+            <MenuItem Background="#FFE9F574" FontSize="10" Header="Information" Height="24" Width="69" Click="Go"/>
             <MenuItem Background="#FFA1E289" FontSize="10" Header="Teacher List" Height="22" Width="79" Click="MenuItem_Click"/>
             <MenuItem Background="#FFE9F574" FontSize="10" Header="Students List" Height="24" Width="69" Click="All_Students"/>
         </Menu>

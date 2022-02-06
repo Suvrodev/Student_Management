@@ -27,6 +27,13 @@ namespace Student_Management
             InitializeComponent();
         }
 
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+            MainWindow m= new MainWindow();
+            m.Show();
+            this.Close();
+        }
+
         private void modify_btn(object sender, RoutedEventArgs e)
         {
             String ID = tb.Text;

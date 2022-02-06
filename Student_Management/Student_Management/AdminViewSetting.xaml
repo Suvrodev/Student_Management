@@ -30,7 +30,7 @@
         <RadioButton x:Name="RB_Male" Content="Male" HorizontalAlignment="Left" Margin="313,170,0,0" VerticalAlignment="Top" Height="12" Width="52" FontSize="8" GroupName="Sex_Group" Background="#FFBCEAE4"/>
         <RadioButton x:Name="RB_Female" Content="Female" HorizontalAlignment="Left" Margin="365,170,0,0" VerticalAlignment="Top" Height="12" Width="52" FontSize="8" GroupName="Sex_Group" Background="#FFBCEAE4"/>
         <RadioButton x:Name="RB_Other" Content="Other" HorizontalAlignment="Left" Margin="422,170,0,0" VerticalAlignment="Top" Height="12" Width="52" FontSize="8" GroupName="Sex_Group" Background="#FFBCEAE4" RenderTransformOrigin="0.605,1.97"/>
-        <ComboBox x:Name="comboBox_rl" HorizontalAlignment="Left" Margin="118,204,0,0" VerticalAlignment="Top" Width="106">
+        <ComboBox x:Name="comboBox_rl" HorizontalAlignment="Left" Margin="118,204,0,0" VerticalAlignment="Top" Width="106" SelectedIndex="0">
             <ComboBoxItem Content="Hindu"/>
             <ComboBoxItem Content="Muslim"/>
             <ComboBoxItem Content="Buddhist"/>

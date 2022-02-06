@@ -21,7 +21,7 @@ namespace Student_Management
     public partial class Teacher_Own_Update : Window
     {
         public String Get_ID = "";
-        public String Name = "", Age = "", Sex = "", Rel = "", Department = "", M_S = "", Mail = "", phn = "", DOB = "", Loc = "", Pass = "";
+        public String Name_ = "", Age = "", Sex = "", Rel = "", Department = "", M_S = "", Mail = "", phn = "", DOB = "", Loc = "", Pass = "";
         public Teacher_Own_Update()
         {
             InitializeComponent();

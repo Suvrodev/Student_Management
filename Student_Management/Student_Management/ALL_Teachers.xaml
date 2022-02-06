@@ -19,7 +19,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <ComboBox x:Name="comboBox_rl" HorizontalAlignment="Left" Margin="394,46,0,0" VerticalAlignment="Top" Width="106">
+        <ComboBox x:Name="comboBox_rl" HorizontalAlignment="Left" Margin="394,46,0,0" VerticalAlignment="Top" Width="106" SelectedIndex="0">
             <ComboBoxItem Content="ALL"/>
             <ComboBoxItem Content="Hindu"/>
             <ComboBoxItem Content="Muslim"/>
@@ -27,14 +27,14 @@
             <ComboBoxItem Content="Christian"/>
         </ComboBox>
         <Label x:Name="label1_Copy9" Content="Department" HorizontalAlignment="Left" Margin="16,44,0,0" VerticalAlignment="Top" Height="22" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <ComboBox x:Name="comboBox_dprtmnt" HorizontalAlignment="Left" Margin="80,44,0,0" VerticalAlignment="Top" Width="106">
+        <ComboBox x:Name="comboBox_dprtmnt" HorizontalAlignment="Left" Margin="80,44,0,0" VerticalAlignment="Top" Width="106" SelectedIndex="0">
             <ComboBoxItem Content="ALL"/>
             <ComboBoxItem Content="CSE"/>
             <ComboBoxItem Content="EEE"/>
             <ComboBoxItem Content="CIVIL"/>
             <ComboBoxItem Content="BBA"/>
         </ComboBox>
-        <ComboBox x:Name="comboBox_Sex" HorizontalAlignment="Left" Margin="251,46,0,0" VerticalAlignment="Top" Width="82">
+        <ComboBox x:Name="comboBox_Sex" HorizontalAlignment="Left" Margin="251,46,0,0" VerticalAlignment="Top" Width="82" SelectedIndex="0">
             <ComboBoxItem Content="ALL"/>
             <ComboBoxItem Content="Male"/>
             <ComboBoxItem Content="Female"/>

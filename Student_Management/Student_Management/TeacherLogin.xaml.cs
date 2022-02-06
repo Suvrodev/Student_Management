@@ -43,7 +43,7 @@ namespace Student_Management
 
             String id = "", pass = "";
             String Name = "";
-            String Age = "", Sex = "", Rel = "", Department = "", M_S = "", Mail = "", Phn = "", DOB = "", Loc = "";
+            String  Age = "", Sex = "", Rel = "", Department = "", M_S = "", Mail = "", Phn = "", DOB = "", Loc = "";
 
 
         /////Data Retrive//////////

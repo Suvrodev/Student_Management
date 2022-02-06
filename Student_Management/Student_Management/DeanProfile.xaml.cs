@@ -115,5 +115,19 @@ namespace Student_Management
             a.Show();
             this.Close();
         }
+
+        private void Course_Teacher(object sender, RoutedEventArgs e)
+        {
+            Course_And_Teacher c = new Course_And_Teacher();
+            c.Show();
+            this.Close();
+        }
+
+        private void Give_Message(object sender, RoutedEventArgs e)
+        {
+            DeangoMessage d = new DeangoMessage();
+            d.Show();
+            this.Close();
+        }
     }
 }

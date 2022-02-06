@@ -34,6 +34,7 @@
         </ComboBox>
         <Label x:Name="label1_Copy19" Content="Date of Last Donate" HorizontalAlignment="Left" Margin="38,212,0,0" VerticalAlignment="Top" Height="21" Width="87" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.526,2.13"/>
         <TextBox x:Name="last_donate_box_" HorizontalAlignment="Left" Height="21" Margin="133,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Background="#FFBCEAE4" FontWeight="Bold"/>
+        <Button x:Name="button_Copy2" Content="Back" HorizontalAlignment="Left" Margin="38,256,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
 
     </Grid>
 </Window>

@@ -172,6 +172,20 @@ namespace Student_Management
             this.Close();
         }
 
+        private void Go(object sender, RoutedEventArgs e)
+        {
+            InfoToStudents i = new InfoToStudents();
+            i.ID = tb.Text;
+            
+            i.Department = tb_department.Text;
+
+            i.Semester = tb_semester.Text;
+
+
+            i.Show();
+            this.Close();
+        }
+
         private void All_Students(object sender, RoutedEventArgs e)
         {
             All_Students_By a = new All_Students_By();

@@ -162,7 +162,7 @@ namespace Student_Management
 
         private void search_btn(object sender, RoutedEventArgs e)
         {
-
+            Name_box_s.Text = "";
             String Given_ID = ID_box_s.Text;
             //  MessageBoxResult result = MessageBox.Show(""+Given_ID);
 
@@ -250,6 +250,103 @@ namespace Student_Management
             }
 
             
+
+            if (id == "")
+            {
+                MessageBoxResult result = MessageBox.Show("Invalid ID");
+            }
+        }
+
+        private void search_btn_Name(object sender, RoutedEventArgs e)
+        {
+            ID_box_s.Text = "";
+            String Given_Name = Name_box_s.Text;
+            //  MessageBoxResult result = MessageBox.Show(""+Given_ID);
+
+            String id = "";
+            String Name = "", Department = "", Semester = "", C_T = "";
+            /////Data Retrive//////////
+
+            String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+            // String Query = "SELECT `"+ID+"`, `"+Password+"`  FROM `admin` WHERE ID='"+ID+"';";
+            String Query = " SELECT * FROM `course` WHERE Name = '" + Given_Name + "'";
+
+
+            MySqlConnection mycon = new MySqlConnection(Connection);
+            MySqlCommand myCom = new MySqlCommand(Query, mycon);
+
+            MySqlDataReader reader;
+            mycon.Open();
+            reader = myCom.ExecuteReader();
+            while (reader.Read())
+            {
+                id = Convert.ToString(reader[0]);
+                Name = Convert.ToString(reader[1]);
+                Department = Convert.ToString(reader[2]);
+                Semester = Convert.ToString(reader[3]);
+                C_T = Convert.ToString(reader[4]);
+            }
+            mycon.Close();
+
+            ID_box.Text = id;
+            FName_Box.Text = Name;
+
+
+            ///Department
+            if (Department == "CSE")
+            {
+                comboBox_dprtmnt.SelectedIndex = 0;
+            }
+            else if (Department == "EEE")
+            {
+                comboBox_dprtmnt.SelectedIndex = 1;
+            }
+            else if (Department == "Civil")
+            {
+                comboBox_dprtmnt.SelectedIndex = 2;
+            }
+            else if (Department == "BBA")
+            {
+                comboBox_dprtmnt.SelectedIndex = 3;
+            }
+            else
+            {
+                comboBox_dprtmnt.SelectedIndex = -1;
+            }
+
+
+
+            ///Semester     
+            for (int i = 0; i < 12; i++)
+            {
+                comboBox_semester.SelectedIndex = i;
+                String val = comboBox_semester.Text;
+                if (val == Semester)
+                {
+                    break;
+                }
+                else
+                {
+                    comboBox_semester.SelectedIndex = -1;
+                }
+            }
+
+            ///Course Teacher
+            for (int i = 0; i < 20; i++)
+            {
+                comboBox_Teacher_.SelectedIndex = i;
+                String val = comboBox_Teacher_.Text;
+                if (val == C_T)
+                {
+                    break;
+                }
+                else
+                {
+                    comboBox_Teacher_.SelectedIndex = -1;
+                }
+            }
+
+
 
             if (id == "")
             {

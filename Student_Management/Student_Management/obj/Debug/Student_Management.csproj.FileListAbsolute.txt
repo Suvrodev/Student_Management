@@ -79,3 +79,11 @@ F:\AAA\Project\Student_Management\Student_Management\obj\Debug\BloodDonateByStud
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\BloodDonateByStudent.baml
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Student_Blood_Donation.g.cs
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Student_Blood_Donation.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\DeangoMessage.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\DeangoMessage.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\InfoToStudents.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\InfoToStudents.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Course_And_Teacher - Copy.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\TeacherGiveMessage.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Course_And_Teacher - Copy.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\TeacherGiveMessage.baml

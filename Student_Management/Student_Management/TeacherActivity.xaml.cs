@@ -25,7 +25,44 @@ namespace Student_Management
     public partial class TeacherActivity : Window
     {
         public String Get_ID = "";
-        public String Name = "", Age = "", Sex = "", Rel = "", Department = "", M_S = "", Mail = "", phn = "", DOB = "", Loc = "", Pass = "";
+        public String Name="", Age = "", Sex = "", Rel = "", Department = "", M_S = "", Mail = "", phn = "", DOB = "", Loc = "", Pass = "";
+
+        private void Give_Message(object sender, RoutedEventArgs e)
+        {
+            TeacherGiveMessage t = new TeacherGiveMessage();
+            t.Get_ID = Get_ID;
+            t.Show();
+            this.Close();
+        }
+
+        public TeacherActivity()
+        {
+            InitializeComponent();
+
+            String Teacher_Message = "";
+            /////Data Retrive//////////
+            String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+            // String Query = "SELECT `"+ID+"`, `"+Password+"`  FROM `admin` WHERE ID='"+ID+"';";
+            String Query = " SELECT * FROM `message` WHERE ID = 'dean'";
+
+
+            MySqlConnection mycon = new MySqlConnection(Connection);
+            MySqlCommand myCom = new MySqlCommand(Query, mycon);
+
+            MySqlDataReader reader;
+            mycon.Open();
+            reader = myCom.ExecuteReader();
+            while (reader.Read())
+            {
+                Teacher_Message = Convert.ToString(reader[15]);
+
+            }
+            mycon.Close();
+
+            dean_msg.Text = Teacher_Message;
+
+        }
+
 
         private void All_Clourse(object sender, RoutedEventArgs e)
         {
@@ -48,12 +85,7 @@ namespace Student_Management
             this.Close();
         }
 
-        public TeacherActivity()
-        {
-            InitializeComponent();
-            
-        }
-
+      
         private void Show_btn(object sender, RoutedEventArgs e)
         {
             MessageBox.Show(Get_ID+"\n"+Name + "\n"+ Age + "\n" + Sex + "\n" + Rel + "\n" + Department + "\n" + M_S + "\n" + phn + "\n" + Mail + "\n" + DOB + "\n" + Loc+"\n"+Pass);

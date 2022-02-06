@@ -24,11 +24,13 @@
                 <MenuItem Header="Add Subject" Click="Add_Subject"/>
                 <MenuItem Header="View And Setting" Click="CourseViewSetting"/>
                 <MenuItem Header="View All" Click="View_All_Course"/>
+                <MenuItem Header="Course Teacher" Click="Course_Teacher"/>
             </MenuItem>
         </Menu>
-        <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="207,109,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Width="153" Background="#FF53C9D4" Height="21" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold"/>
-        <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="141,77,0,0" TextWrapping="Wrap" Text="Smeone" VerticalAlignment="Top" Width="208" Background="#FF69E8D1" RenderTransformOrigin="1.462,-0.459" Height="27" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20"/>
-        <TextBlock x:Name="for_id_Copy" HorizontalAlignment="Left" Margin="141,109,0,0" TextWrapping="Wrap" Text="Your ID:" VerticalAlignment="Top" Width="66" Background="#FF53C9D4" Height="21" RenderTransformOrigin="1.269,2.737" FontSize="18"/>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="145,150,0,0" VerticalAlignment="Top" Width="75" Click="Message"/>
+        <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="362,69,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Width="153" Background="#FF53C9D4" Height="21" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold"/>
+        <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="307,42,0,0" TextWrapping="Wrap" Text="Smeone" VerticalAlignment="Top" Width="208" Background="#FF69E8D1" RenderTransformOrigin="1.462,-0.459" Height="27" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20"/>
+        <TextBlock x:Name="for_id_Copy" HorizontalAlignment="Left" Margin="307,69,0,0" TextWrapping="Wrap" Text="Your ID:" VerticalAlignment="Top" Width="55" Background="#FF53C9D4" Height="21" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
+        <TextBlock x:Name="for_id_Copy1" HorizontalAlignment="Left" Margin="23,112,0,0" TextWrapping="Wrap" Text="Message from dean" VerticalAlignment="Top" Width="131" Background="#FF53C9D4" Height="21" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
+        <TextBlock x:Name="dean_msg" HorizontalAlignment="Left" Margin="23,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="461" Background="#FFABE2C4" Height="69" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
     </Grid>
 </Window>

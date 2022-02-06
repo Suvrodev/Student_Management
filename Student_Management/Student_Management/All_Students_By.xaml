@@ -21,7 +21,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <ComboBox x:Name="comboBox_rl" HorizontalAlignment="Left" Margin="661,42,0,0" VerticalAlignment="Top" Width="106">
+        <ComboBox x:Name="comboBox_rl" HorizontalAlignment="Left" Margin="661,42,0,0" VerticalAlignment="Top" Width="106" SelectedIndex="0">
             <ComboBoxItem Content="ALL"/>
             <ComboBoxItem Content="Hindu"/>
             <ComboBoxItem Content="Muslim"/>
@@ -29,14 +29,14 @@
             <ComboBoxItem Content="Christian"/>
         </ComboBox>
         <Label x:Name="label1_Copy9" Content="Department" HorizontalAlignment="Left" Margin="16,44,0,0" VerticalAlignment="Top" Height="22" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <ComboBox x:Name="comboBox_dprtmnt" HorizontalAlignment="Left" Margin="80,44,0,0" VerticalAlignment="Top" Width="106">
+        <ComboBox x:Name="comboBox_dprtmnt" HorizontalAlignment="Left" Margin="80,44,0,0" VerticalAlignment="Top" Width="106" SelectedIndex="0">
             <ComboBoxItem Content="ALL"/>
             <ComboBoxItem Content="CSE"/>
             <ComboBoxItem Content="EEE"/>
             <ComboBoxItem Content="CIVIL"/>
             <ComboBoxItem Content="BBA"/>
         </ComboBox>
-        <ComboBox x:Name="comboBox_semester" HorizontalAlignment="Left" Margin="407,44,0,0" VerticalAlignment="Top" Width="56" Height="20">
+        <ComboBox x:Name="comboBox_semester" HorizontalAlignment="Left" Margin="407,44,0,0" VerticalAlignment="Top" Width="56" Height="20" SelectedIndex="0">
             <ComboBoxItem Content="ALL"/>
             <ComboBoxItem Content="1_1"/>
             <ComboBoxItem Content="1_2"/>
@@ -52,14 +52,14 @@
             <ComboBoxItem Content="4_3"/>
         </ComboBox>
         <Label x:Name="label1_Copy11" Content="Section" HorizontalAlignment="Left" Margin="210,44,0,0" VerticalAlignment="Top" Height="22" Width="42" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <ComboBox x:Name="comboBox_section" HorizontalAlignment="Left" Margin="264,44,0,0" VerticalAlignment="Top" Width="51" Height="20">
+        <ComboBox x:Name="comboBox_section" HorizontalAlignment="Left" Margin="264,44,0,0" VerticalAlignment="Top" Width="51" Height="20" SelectedIndex="0">
             <ComboBoxItem Content="ALL"/>
             <ComboBoxItem Content="A"/>
             <ComboBoxItem Content="B"/>
             <ComboBoxItem Content="C"/>
             <ComboBoxItem Content="D"/>
         </ComboBox>
-        <ComboBox x:Name="comboBox_Sex" HorizontalAlignment="Left" Margin="518,42,0,0" VerticalAlignment="Top" Width="82">
+        <ComboBox x:Name="comboBox_Sex" HorizontalAlignment="Left" Margin="518,42,0,0" VerticalAlignment="Top" Width="82" SelectedIndex="0">
             <ComboBoxItem Content="ALL"/>
             <ComboBoxItem Content="Male"/>
             <ComboBoxItem Content="Female"/>
@@ -67,19 +67,19 @@
         </ComboBox>
         <Button x:Name="button" Content="Show" HorizontalAlignment="Left" Margin="1267,49,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="Show_btn"/>
         <Label x:Name="label1_Copy16" Content="Vaccinated" HorizontalAlignment="Left" Margin="780,42,0,0" VerticalAlignment="Top" Height="21" Width="62" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <ComboBox x:Name="comboBox_Vaccinated" HorizontalAlignment="Left" Margin="858,43,0,0" VerticalAlignment="Top" Width="63">
+        <ComboBox x:Name="comboBox_Vaccinated" HorizontalAlignment="Left" Margin="858,43,0,0" VerticalAlignment="Top" Width="63" SelectedIndex="0">
             <ComboBoxItem Content="ALL"/>
             <ComboBoxItem Content="Yes"/>
             <ComboBoxItem Content="No"/>
         </ComboBox>
         <Label x:Name="label1_Copy17" Content="Blood Donate" HorizontalAlignment="Left" Margin="1097,45,0,0" VerticalAlignment="Top" Height="25" Width="64" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <ComboBox x:Name="comboBox_Blood_Donate" HorizontalAlignment="Left" Margin="1175,45,0,0" VerticalAlignment="Top" Width="70" Height="21">
+        <ComboBox x:Name="comboBox_Blood_Donate" HorizontalAlignment="Left" Margin="1175,45,0,0" VerticalAlignment="Top" Width="70" Height="21" SelectedIndex="0">
             <ComboBoxItem Content="ALL"/>
             <ComboBoxItem Content="Yes"/>
             <ComboBoxItem Content="No"/>
         </ComboBox>
         <Label x:Name="label1_Copy18" Content="Blood Group" HorizontalAlignment="Left" Margin="942,43,0,0" VerticalAlignment="Top" Height="22" Width="72" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <ComboBox x:Name="comboBox_BloodGroup" HorizontalAlignment="Left" Margin="1029,45,0,0" VerticalAlignment="Top" Width="51" Height="20">
+        <ComboBox x:Name="comboBox_BloodGroup" HorizontalAlignment="Left" Margin="1029,45,0,0" VerticalAlignment="Top" Width="51" Height="20" SelectedIndex="0">
             <ComboBoxItem Content="ALL"/>
             <ComboBoxItem Content="A+"/>
             <ComboBoxItem Content="A-"/>

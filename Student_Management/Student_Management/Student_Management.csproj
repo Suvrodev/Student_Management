@@ -91,6 +91,15 @@
     <Compile Include="CourseViewSetting.xaml.cs">
       <DependentUpon>CourseViewSetting.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Course_And_Teacher - Copy.xaml.cs">
+      <DependentUpon>Course_And_Teacher - Copy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeangoMessage.xaml.cs">
+      <DependentUpon>DeangoMessage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InfoToStudents.xaml.cs">
+      <DependentUpon>InfoToStudents.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StudentActivity_2.xaml.cs">
       <DependentUpon>StudentActivity_2.xaml</DependentUpon>
     </Compile>
@@ -111,6 +120,9 @@
     </Compile>
     <Compile Include="TeacherActivity.xaml.cs">
       <DependentUpon>TeacherActivity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherGiveMessage.xaml.cs">
+      <DependentUpon>TeacherGiveMessage.xaml</DependentUpon>
     </Compile>
     <Compile Include="TeacherLogin.xaml.cs">
       <DependentUpon>TeacherLogin.xaml</DependentUpon>
@@ -176,11 +188,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Course_And_Teacher - Copy.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DeangoMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DeanProfile.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Dean_Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InfoToStudents.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -233,6 +257,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TeacherActivity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TeacherGiveMessage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

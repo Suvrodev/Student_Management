@@ -8,7 +8,7 @@
         Title="DeanProfile" Height="350" Width="525">
     <Grid>
         <Label x:Name="label" Content="Welcome to Dean Profile" VerticalAlignment="Top" Height="40" Width="518" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,0.667,0"/>
-        <Menu x:Name="menu" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="217" Margin="0,45,0,0">
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="18" VerticalAlignment="Top" Width="307" Margin="0,45,0,0">
             <MenuItem Background="#FF97E6EE" FontSize="10" Header="Admin">
                 <MenuItem Header="Add Admin" Click="Add_Admin"/>
                 <MenuItem Header="View and setting" Click="Admin_setting"/>
@@ -28,7 +28,9 @@
                 <MenuItem Header="Add Subject" Click="Add_Subject"/>
                 <MenuItem Header="View And Setting" Click="CourseViewSetting"/>
                 <MenuItem Header="View All" Click="View_All_Course"/>
+                <MenuItem Header="Course Teacher" Click="Course_Teacher"/>
             </MenuItem>
+            <MenuItem Background="#FF74F580" FontSize="10" Header="Give Message" Height="18" Width="80" Click="Give_Message"/>
         </Menu>
         <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="22,289,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
 

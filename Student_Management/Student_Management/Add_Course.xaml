@@ -14,13 +14,13 @@
         <Label x:Name="label1_Copy12" Content="Course ID" HorizontalAlignment="Left" Margin="82,52,0,0" VerticalAlignment="Top" Height="20" Width="48" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
         <TextBox x:Name="ID_box" HorizontalAlignment="Left" Height="20" Margin="141,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Background="#FFBCEAE4" FontWeight="Bold"/>
         <Label x:Name="label1_Copy9" Content="Department" HorizontalAlignment="Left" Margin="69,122,0,0" VerticalAlignment="Top" Height="22" Width="61" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <ComboBox x:Name="comboBox_dprtmnt" HorizontalAlignment="Left" Margin="143,122,0,0" VerticalAlignment="Top" Width="106">
+        <ComboBox x:Name="comboBox_dprtmnt" HorizontalAlignment="Left" Margin="143,122,0,0" VerticalAlignment="Top" Width="106" SelectedIndex="0">
             <ComboBoxItem Content="CSE"/>
             <ComboBoxItem Content="EEE"/>
             <ComboBoxItem Content="CIVIL"/>
             <ComboBoxItem Content="BBA"/>
         </ComboBox>
-        <ComboBox x:Name="comboBox_semester" HorizontalAlignment="Left" Margin="143,156,0,0" VerticalAlignment="Top" Width="106">
+        <ComboBox x:Name="comboBox_semester" HorizontalAlignment="Left" Margin="143,156,0,0" VerticalAlignment="Top" Width="106" SelectedIndex="0">
             <ComboBoxItem Content="1_1"/>
             <ComboBoxItem Content="1_2"/>
             <ComboBoxItem Content="1_3"/>
@@ -35,7 +35,7 @@
             <ComboBoxItem Content="4_3"/>
         </ComboBox>
         <Label x:Name="label1_Copy" Content="Course Teacher" HorizontalAlignment="Left" Margin="57,189,0,0" VerticalAlignment="Top" Height="22" Width="73" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <ComboBox x:Name="comboBox_Teacher_" HorizontalAlignment="Left" Margin="143,189,0,0" VerticalAlignment="Top" Width="179"/>
+        <ComboBox x:Name="comboBox_Teacher_" HorizontalAlignment="Left" Margin="143,189,0,0" VerticalAlignment="Top" Width="179" SelectedIndex="0"/>
         <Button x:Name="button" Content="Submit" HorizontalAlignment="Left" Margin="97,231,0,0" VerticalAlignment="Top" Width="57" Background="#FF0CC6CF" Click="Reg_Click_btn"/>
         <Button x:Name="button_Copy" Content="Reset" HorizontalAlignment="Left" Margin="180,231,0,0" VerticalAlignment="Top" Width="53" Background="#FFE84066" Click="Reset_btn"/>
 

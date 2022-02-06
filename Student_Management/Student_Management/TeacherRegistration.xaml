@@ -30,7 +30,7 @@
         <RadioButton x:Name="RB_Other" Content="Other" HorizontalAlignment="Left" Margin="402,138,0,0" VerticalAlignment="Top" Height="12" Width="52" FontSize="8" GroupName="Sex_Group" Background="#FFBCEAE4"/>
         <Button x:Name="button" Content="Registration" HorizontalAlignment="Left" Margin="132,602,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="Reg_Click_btn"/>
         <Button x:Name="button_Copy" Content="Reset" HorizontalAlignment="Left" Margin="262,602,0,0" VerticalAlignment="Top" Width="75" Background="#FFE84066" Click="Reset_btn"/>
-        <ComboBox x:Name="comboBox_rl" HorizontalAlignment="Left" Margin="321,219,0,0" VerticalAlignment="Top" Width="106">
+        <ComboBox x:Name="comboBox_rl" HorizontalAlignment="Left" Margin="321,219,0,0" VerticalAlignment="Top" Width="106" SelectedIndex="0">
             <ComboBoxItem Content="Hindu"/>
             <ComboBoxItem Content="Muslim"/>
             <ComboBoxItem Content="Buddhist"/>
@@ -42,14 +42,14 @@
         <Label x:Name="label1_Copy12" Content="ID" HorizontalAlignment="Left" Margin="53,62,0,0" VerticalAlignment="Top" Height="20" Width="22" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
         <TextBox x:Name="ID_box" HorizontalAlignment="Left" Height="21" Margin="80,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249" Background="#FFBCEAE4" FontWeight="Bold"/>
         <Label x:Name="label1_Copy9" Content="Department" HorizontalAlignment="Left" Margin="16,175,0,0" VerticalAlignment="Top" Height="22" Width="70" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <ComboBox x:Name="comboBox_dprtmnt" HorizontalAlignment="Left" Margin="89,175,0,0" VerticalAlignment="Top" Width="106">
+        <ComboBox x:Name="comboBox_dprtmnt" HorizontalAlignment="Left" Margin="89,175,0,0" VerticalAlignment="Top" Width="106" SelectedIndex="0">
             <ComboBoxItem Content="CSE"/>
             <ComboBoxItem Content="EEE"/>
             <ComboBoxItem Content="CIVIL"/>
             <ComboBoxItem Content="BBA"/>
         </ComboBox>
         <Label x:Name="label1_Copy3" Content="Merital Status" HorizontalAlignment="Left" Margin="16,219,0,0" VerticalAlignment="Top" Height="22" Width="70" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <ComboBox x:Name="comboBox_MS" HorizontalAlignment="Left" Margin="91,219,0,0" VerticalAlignment="Top" Width="106">
+        <ComboBox x:Name="comboBox_MS" HorizontalAlignment="Left" Margin="91,219,0,0" VerticalAlignment="Top" Width="106" SelectedIndex="0">
             <ComboBoxItem Content="Merried"/>
             <ComboBoxItem Content="Unmerried"/>
         </ComboBox>

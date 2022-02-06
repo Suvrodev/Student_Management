@@ -9,7 +9,7 @@
     <Grid>
         <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="91,121,0,0" VerticalAlignment="Top" Height="148" Width="384"/>
         <Label x:Name="label1_Copy9" Content="Department" HorizontalAlignment="Left" Margin="16,44,0,0" VerticalAlignment="Top" Height="22" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <ComboBox x:Name="comboBox_dprtmnt" HorizontalAlignment="Left" Margin="80,44,0,0" VerticalAlignment="Top" Width="106">
+        <ComboBox x:Name="comboBox_dprtmnt" HorizontalAlignment="Left" Margin="80,44,0,0" VerticalAlignment="Top" Width="106" SelectedIndex="0">
             <ComboBoxItem Content="ALL"/>
             <ComboBoxItem Content="CSE"/>
             <ComboBoxItem Content="EEE"/>
@@ -18,7 +18,7 @@
         </ComboBox>
         <Label x:Name="label" Content="View Course List" VerticalAlignment="Top" Height="29" Width="872" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" Margin="10,0" HorizontalContentAlignment="Center"/>
         <Label x:Name="label1_Copy3" Content="Semester" HorizontalAlignment="Left" Margin="191,44,0,0" VerticalAlignment="Top" Height="22" Width="70" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <ComboBox x:Name="comboBox_semester" HorizontalAlignment="Left" Margin="275,44,0,0" VerticalAlignment="Top" Width="56" Height="20">
+        <ComboBox x:Name="comboBox_semester" HorizontalAlignment="Left" Margin="275,44,0,0" VerticalAlignment="Top" Width="56" Height="20" SelectedIndex="0">
             <ComboBoxItem Content="ALL"/>
             <ComboBoxItem Content="1_1"/>
             <ComboBoxItem Content="1_2"/>
@@ -34,7 +34,7 @@
             <ComboBoxItem Content="4_3"/>
         </ComboBox>
         <Label x:Name="label1_Copy" Content="Course Teacher" HorizontalAlignment="Left" Margin="16,77,0,0" VerticalAlignment="Top" Height="22" Width="70" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
-        <ComboBox x:Name="comboBox_teacher" HorizontalAlignment="Left" Margin="105,77,0,0" VerticalAlignment="Top" Width="146">
+        <ComboBox x:Name="comboBox_teacher" HorizontalAlignment="Left" Margin="105,77,0,0" VerticalAlignment="Top" Width="146" SelectedIndex="0">
             <ComboBoxItem Content="ALL"/>
         </ComboBox>
         <Button x:Name="button" Content="Show" HorizontalAlignment="Left" Margin="275,79,0,0" VerticalAlignment="Top" Width="72" Background="#FF0CC6CF" Click="Show_btn"/>

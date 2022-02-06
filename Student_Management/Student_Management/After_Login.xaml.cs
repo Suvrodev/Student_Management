@@ -25,8 +25,28 @@ namespace Student_Management
         public After_Login()
         {
             InitializeComponent();
-            
-            
+
+            String Admin_Message = "";      
+            /////Data Retrive//////////
+            String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+            // String Query = "SELECT `"+ID+"`, `"+Password+"`  FROM `admin` WHERE ID='"+ID+"';";
+            String Query = " SELECT * FROM `message` WHERE ID = 'dean'";
+
+
+            MySqlConnection mycon = new MySqlConnection(Connection);
+            MySqlCommand myCom = new MySqlCommand(Query, mycon);
+
+            MySqlDataReader reader;
+            mycon.Open();
+            reader = myCom.ExecuteReader();
+            while (reader.Read())
+            {
+                Admin_Message = Convert.ToString(reader[14]);            
+
+            }
+            mycon.Close();
+
+            dean_msg.Text = Admin_Message;       
 
         }
 
@@ -200,6 +220,13 @@ namespace Student_Management
         {
             ALl_Course a = new ALl_Course();
             a.Show();
+            this.Close();
+        }
+
+        private void Course_Teacher(object sender, RoutedEventArgs e)
+        {
+            Course_And_Teacher c = new Course_And_Teacher();
+            c.Show();
             this.Close();
         }
     }
