@@ -24,7 +24,7 @@ namespace Student_Management
     /// </summary>
     public partial class InfoToStudents : Window
     {
-        public String ID = "", Department = "", Semester = "";
+        public String Get_ID = "", Department = "", Semester = "";
     
 
         public InfoToStudents()
@@ -118,20 +118,161 @@ namespace Student_Management
 
             //////////////////////////////////
 
-           // String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
-           // String Query = "";
+            // String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+            // String Query = "";
 
-            Query = "SELECT T_N,3_2 FROM `message` WHERE  "+Semester+"  !=''";
+            /* Query = "SELECT T_N,3_2 FROM `message` WHERE  "+Semester+"  !=''";
 
-             mycon = new MySqlConnection(Connection);
-             myCom = new MySqlCommand(Query, mycon);
+              mycon = new MySqlConnection(Connection);
+              myCom = new MySqlCommand(Query, mycon);
+             mycon.Open();
+
+             MySqlDataAdapter adp = new MySqlDataAdapter(myCom);
+             DataTable dt = new DataTable("admin");
+             adp.Fill(dt);
+             dataGrid.ItemsSource = dt.DefaultView;
+             adp.Update(dt);
+             mycon.Close();*/
+
+
+            MessageBox.Show(Get_ID);
+             Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+             Query = "";
+
+            Query = "SELECT DISTINCT course.C_Teacher FROM students INNER JOIN course ON students.Semester = course.Semester WHERE students.ID='" + Get_ID + "'";
+            mycon = new MySqlConnection(Connection);
+            myCom = new MySqlCommand(Query, mycon);
+
+          //  reader;
             mycon.Open();
+            reader = myCom.ExecuteReader();
+            String[] GetTeacher_Name = new String[10];
+            int count = 1;
+            while (reader.Read())
+            {
+                GetTeacher_Name[count] = Convert.ToString(reader[0]);
+                count++;
+              //  MessageBox.Show();
+            }          
+            mycon.Close();
 
-            MySqlDataAdapter adp = new MySqlDataAdapter(myCom);
-            DataTable dt = new DataTable("admin");
-            adp.Fill(dt);
-            dataGrid.ItemsSource = dt.DefaultView;
-            adp.Update(dt);
+            for(int i = 1; i <= GetTeacher_Name.Length; i++)
+            {
+                if (i == 1)
+                {
+                    t_1.Text = GetTeacher_Name[i];
+                }
+                if (i == 2)
+                {
+                    t_2.Text = GetTeacher_Name[i];
+                }
+                if (i == 3)
+                {
+                    t_3.Text = GetTeacher_Name[i];
+                }
+                if (i == 4)
+                {
+                    t_4.Text = GetTeacher_Name[i];
+                }
+                if (i == 5)
+                {
+                    t_5.Text = GetTeacher_Name[i];
+                }
+            }
+
+
+
+            ///////////////////////
+            ////Teacher Message///
+            /////////////////////
+            String Message_1 = t_1.Text;
+            String Message_2 = t_2.Text;
+            String Message_3 = t_3.Text;
+            String Message_4 = t_4.Text;
+            String Message_5 = t_5.Text;
+
+            ///////////////////////1/////////////////////
+            Query = "SELECT `"+Semester+"` FROM `message` WHERE T_N='"+Message_1+"';";
+            mycon = new MySqlConnection(Connection);
+            myCom = new MySqlCommand(Query, mycon);
+
+         //   MessageBox.Show("My Semester is:" + Semester);
+            //  reader;
+            mycon.Open();
+            reader = myCom.ExecuteReader();
+            while (reader.Read())
+            {
+               String msg = Convert.ToString(reader[0]);
+
+                t_1_m.Text = msg;
+            }
+
+            ///////////////////////2/////////////////////
+            Query = "SELECT `" + Semester + "` FROM `message` WHERE T_N='" + Message_2 + "';";
+            mycon = new MySqlConnection(Connection);
+            myCom = new MySqlCommand(Query, mycon);
+
+          //  MessageBox.Show("My Semester is:" + Semester);
+            //  reader;
+            mycon.Open();
+            reader = myCom.ExecuteReader();
+            while (reader.Read())
+            {
+                String msg = Convert.ToString(reader[0]);
+
+                t_2_m.Text = msg;
+            }
+            mycon.Close();
+
+            ///////////////////////3/////////////////////
+            Query = "SELECT `" + Semester + "` FROM `message` WHERE T_N='" + Message_3 + "';";
+            mycon = new MySqlConnection(Connection);
+            myCom = new MySqlCommand(Query, mycon);
+
+          //  MessageBox.Show("My Semester is:" + Semester);
+            //  reader;
+            mycon.Open();
+            reader = myCom.ExecuteReader();
+            while (reader.Read())
+            {
+                String msg = Convert.ToString(reader[0]);
+
+                t_3_m.Text = msg;
+            }
+            mycon.Close();
+
+            ///////////////////////4/////////////////////
+            Query = "SELECT `" + Semester + "` FROM `message` WHERE T_N='" + Message_4 + "';";
+            mycon = new MySqlConnection(Connection);
+            myCom = new MySqlCommand(Query, mycon);
+
+           // MessageBox.Show("My Semester is:" + Semester);
+            //  reader;
+            mycon.Open();
+            reader = myCom.ExecuteReader();
+            while (reader.Read())
+            {
+                String msg = Convert.ToString(reader[0]);
+
+                t_4_m.Text = msg;
+            }
+            mycon.Close();
+
+            ///////////////////////5/////////////////////
+            Query = "SELECT `" + Semester + "` FROM `message` WHERE T_N='" + Message_5 + "';";
+            mycon = new MySqlConnection(Connection);
+            myCom = new MySqlCommand(Query, mycon);
+
+         //   MessageBox.Show("My Semester is:" + Semester);
+            //  reader;
+            mycon.Open();
+            reader = myCom.ExecuteReader();
+            while (reader.Read())
+            {
+                String msg = Convert.ToString(reader[0]);
+
+                t_5_m.Text = msg;
+            }
             mycon.Close();
         }
     }

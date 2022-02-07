@@ -7,12 +7,25 @@
         mc:Ignorable="d"
         Title="InfoToStudents" Height="597" Width="525">
     <Grid>
-        <Label x:Name="label" Content="Your Information" VerticalAlignment="Top" Height="40" Width="518" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,-1,0"/>
-        <TextBlock x:Name="for_id_Copy1" HorizontalAlignment="Left" Margin="10,103,0,0" TextWrapping="Wrap" Text="Message from dean" VerticalAlignment="Top" Width="131" Background="#FF53C9D4" Height="21" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
-        <TextBlock x:Name="dean_msg" HorizontalAlignment="Left" Margin="10,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="461" Background="#FFABE2C4" Height="69" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
-        <Button x:Name="button" Content="Load All Data" HorizontalAlignment="Left" Margin="186,54,0,0" VerticalAlignment="Top" Width="101" Background="#FF0CC6CF" Click="Update_Click_btn" Height="23"/>
-        <TextBlock x:Name="for_id_Copy" HorizontalAlignment="Left" Margin="10,211,0,0" TextWrapping="Wrap" Text="Message from teacher" VerticalAlignment="Top" Width="158" Background="#FF53C9D4" Height="23" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,285,0,0" VerticalAlignment="Top" Height="149" Width="492"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="504*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="Your Information" VerticalAlignment="Top" Height="40" Width="518" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,-1,0" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="for_id_Copy1" HorizontalAlignment="Left" Margin="0,103,0,0" TextWrapping="Wrap" Text="Message from dean" VerticalAlignment="Top" Width="131" Background="#FF53C9D4" Height="21" RenderTransformOrigin="1.269,2.737" FontSize="14" Grid.Column="1"/>
+        <TextBlock x:Name="dean_msg" HorizontalAlignment="Left" Margin="0,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="461" Background="#FFABE2C4" Height="69" RenderTransformOrigin="1.269,2.737" FontSize="14" Grid.Column="1"/>
+        <Button x:Name="button" Content="Load All Data" HorizontalAlignment="Left" Margin="170,54,0,0" VerticalAlignment="Top" Width="101" Background="#FF0CC6CF" Click="Update_Click_btn" Height="23" Grid.Column="1"/>
+        <TextBlock x:Name="for_id_Copy" HorizontalAlignment="Left" Margin="0,211,0,0" TextWrapping="Wrap" Text="Message from teacher" VerticalAlignment="Top" Width="147" Background="#FF53C9D4" Height="20" RenderTransformOrigin="1.269,2.737" FontSize="14" Grid.Column="1"/>
+        <TextBlock x:Name="t_2" HorizontalAlignment="Left" Margin="0,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Background="#FF53C9D4" Height="22" RenderTransformOrigin="1.269,2.737" FontSize="14" Grid.Column="1"><Run Text="Teacher Name"/><LineBreak/><Run Text=""/></TextBlock>
+        <TextBlock x:Name="t_2_m" HorizontalAlignment="Left" Margin="154,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="331" Background="#FFABE2C4" Height="41" RenderTransformOrigin="1.269,2.737" FontSize="14" Grid.Column="1"/>
+        <TextBlock x:Name="t_3" HorizontalAlignment="Left" Margin="0,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Background="#FF53C9D4" Height="22" RenderTransformOrigin="1.269,2.737" FontSize="14" Grid.Column="1"><Run Text="Teacher Name"/><LineBreak/><Run Text=""/></TextBlock>
+        <TextBlock x:Name="t_3_m" HorizontalAlignment="Left" Margin="154,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="331" Background="#FFABE2C4" Height="41" RenderTransformOrigin="1.269,2.737" FontSize="14" Grid.Column="1"/>
+        <TextBlock x:Name="t_4" HorizontalAlignment="Left" Margin="0,429,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Background="#FF53C9D4" Height="22" RenderTransformOrigin="1.269,2.737" FontSize="14" Grid.Column="1"><Run Text="Teacher Name"/><LineBreak/><Run Text=""/></TextBlock>
+        <TextBlock x:Name="t_4_m" HorizontalAlignment="Left" Margin="154,429,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="331" Background="#FFABE2C4" Height="41" RenderTransformOrigin="1.269,2.737" FontSize="14" Grid.Column="1"/>
+        <TextBlock x:Name="t_1" HorizontalAlignment="Left" Margin="0,243,0,0" TextWrapping="Wrap" Text="Teacher Name" VerticalAlignment="Top" Width="147" Background="#FF53C9D4" Height="22" RenderTransformOrigin="1.269,2.737" FontSize="14" Grid.Column="1"/>
+        <TextBlock x:Name="t_1_m" HorizontalAlignment="Left" Margin="154,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="331" Background="#FFABE2C4" Height="41" RenderTransformOrigin="1.269,2.737" FontSize="14" Grid.Column="1"/>
+        <TextBlock x:Name="t_5" HorizontalAlignment="Left" Margin="0,491,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Background="#FF53C9D4" Height="22" RenderTransformOrigin="1.269,2.737" FontSize="14" Grid.Column="1"><Run Text="Teacher Name"/><LineBreak/><Run Text=""/></TextBlock>
+        <TextBlock x:Name="t_5_m" HorizontalAlignment="Left" Margin="154,491,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="331" Background="#FFABE2C4" Height="41" RenderTransformOrigin="1.269,2.737" FontSize="14" Grid.Column="1"/>
 
     </Grid>
 </Window>

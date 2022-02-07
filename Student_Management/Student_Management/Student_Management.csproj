@@ -100,6 +100,9 @@
     <Compile Include="InfoToStudents.xaml.cs">
       <DependentUpon>InfoToStudents.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Result_And_Amount.xaml.cs">
+      <DependentUpon>Result_And_Amount.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StudentActivity_2.xaml.cs">
       <DependentUpon>StudentActivity_2.xaml</DependentUpon>
     </Compile>
@@ -117,6 +120,9 @@
     </Compile>
     <Compile Include="Student_Login.xaml.cs">
       <DependentUpon>Student_Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Student_OWN_result.xaml.cs">
+      <DependentUpon>Student_OWN_result.xaml</DependentUpon>
     </Compile>
     <Compile Include="TeacherActivity.xaml.cs">
       <DependentUpon>TeacherActivity.xaml</DependentUpon>
@@ -232,6 +238,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Result_And_Amount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="StudentActivity_2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -253,6 +263,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Student_Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Student_OWN_result.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

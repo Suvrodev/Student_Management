@@ -15,9 +15,10 @@
                 <MenuItem Header="View All" Click="ViewAllAdmin"/>
             </MenuItem>
             <MenuItem Background="#FFA1E289" FontSize="10" Header="Students" Height="17" Width="57">
-                <MenuItem Header="Add Students" Click="Add_Student"/>
                 <MenuItem Header="View And Setting" Click="ViewAndSetting"/>
                 <MenuItem Header="View All" Click="View_All_Students"/>
+                <MenuItem Header="Add Students" Click="Add_Student"/>
+                <MenuItem Header="Payment And Result" Click="Payment"/>
             </MenuItem>
             <MenuItem Background="#FFCC74F5" FontSize="10" Header="Teacher" Height="17" Width="57">
                 <MenuItem Header="Add Teacher" Click="Add_Teacher"/>

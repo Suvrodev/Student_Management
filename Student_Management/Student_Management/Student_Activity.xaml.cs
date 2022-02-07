@@ -175,7 +175,7 @@ namespace Student_Management
         private void Go(object sender, RoutedEventArgs e)
         {
             InfoToStudents i = new InfoToStudents();
-            i.ID = tb.Text;
+            i.Get_ID = tb.Text;
             
             i.Department = tb_department.Text;
 
@@ -183,6 +183,20 @@ namespace Student_Management
 
 
             i.Show();
+            this.Close();
+        }
+
+        private void All_result(object sender, RoutedEventArgs e)
+        {
+            String ID = tb.Text;
+            String Semester = tb_semester.Text;
+            MessageBox.Show(ID + "\n" + Semester);
+            Student_OWN_result s = new Student_OWN_result();
+
+            s.Get_ID = ID;
+            s.Get_Semester = Semester;
+
+            s.Show();
             this.Close();
         }
 

@@ -24,6 +24,8 @@ namespace Student_Management
         public MainWindow()
         {
             InitializeComponent();
+            button.Visibility = Visibility.Collapsed;
+            button.Visibility = Visibility.Visible;
         }
 
         private void Login_Click_btn(object sender, RoutedEventArgs e)

@@ -129,5 +129,12 @@ namespace Student_Management
             d.Show();
             this.Close();
         }
+
+        private void Payment(object sender, RoutedEventArgs e)
+        {
+            Result_And_Amount r = new Result_And_Amount();
+            r.Show();
+            this.Close();
+        }
     }
 }

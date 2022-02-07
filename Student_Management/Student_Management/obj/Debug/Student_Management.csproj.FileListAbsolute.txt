@@ -87,3 +87,7 @@ F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Course_And_Teache
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\TeacherGiveMessage.g.cs
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Course_And_Teacher - Copy.baml
 F:\AAA\Project\Student_Management\Student_Management\obj\Debug\TeacherGiveMessage.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Result_And_Amount.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Result_And_Amount.baml
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Student_OWN_result.g.cs
+F:\AAA\Project\Student_Management\Student_Management\obj\Debug\Student_OWN_result.baml
