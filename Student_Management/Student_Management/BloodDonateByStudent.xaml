@@ -32,6 +32,7 @@
             <ComboBoxItem Content="O+"/>
             <ComboBoxItem Content="O-"/>
         </ComboBox>
+        <Button x:Name="button_Copy2" Content="Back" HorizontalAlignment="Left" Margin="22,289,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
 
     </Grid>
 </Window>

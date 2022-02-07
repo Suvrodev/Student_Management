@@ -22,6 +22,16 @@ namespace Student_Management
     {
         public String Get_ID = "";
         public String Name_ = "", Age = "", Sex = "", Rel = "", Department = "", M_S = "", Mail = "", phn = "", DOB = "", Loc = "", Pass = "";
+
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+            TeacherActivity t = new TeacherActivity();
+            t.for_id.Text = for_id.Text;
+            t.for_name.Text = for_name.Text;
+            t.Show();
+            this.Close();
+        }
+
         public Teacher_Own_Update()
         {
             InitializeComponent();

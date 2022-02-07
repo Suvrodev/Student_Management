@@ -20,7 +20,10 @@ namespace Student_Management
     /// </summary>
     public partial class Admin_Update : Window
     {
-       
+
+        public String ID_fb = "";
+        public String yourname = "";
+
         public Admin_Update()
         {
             InitializeComponent();
@@ -146,6 +149,21 @@ namespace Student_Management
             //  Religion By Combo box
             comboBox_rl.SelectedIndex = -1;
             
+        }
+
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+           
+
+            After_Login a = new After_Login();
+
+            /////////////////////
+            a.for_id.Text = for_id.Text;
+            a.for_name.Text = for_name.Text;
+            ////////////////////
+
+            a.Show();
+            this.Close();
         }
     }
 }

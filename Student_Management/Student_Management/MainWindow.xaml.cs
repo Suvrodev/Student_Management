@@ -86,6 +86,11 @@ namespace Student_Management
                     a.for_name.Text = YourName;
                     a.for_id.Text = YourID;
 
+                    /////////////////
+                    a.ID_fb = id;
+                    a.yourname = YourName;
+                    ///////////////////////
+
 
                     a.Show();
                     this.Close();

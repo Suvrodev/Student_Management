@@ -53,6 +53,7 @@
             <ComboBoxItem Content="True"/>
             <ComboBoxItem Content="False"/>
         </ComboBox>
+        <Button x:Name="button_Copy3" Content="Back" HorizontalAlignment="Left" Margin="29,597,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
 
     </Grid>
 </Window>

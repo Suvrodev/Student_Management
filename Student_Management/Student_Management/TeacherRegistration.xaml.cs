@@ -133,6 +133,25 @@ namespace Student_Management
 
 
                             ///Insert Data Close///
+                            ///
+
+                            /////Insert Data in Message Table//////////////////
+                           
+                            Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+                            Query = "INSERT INTO `message`(`ID`, `T_N`) VALUES ('"+ID+"','"+Name+"')";
+
+
+
+                            mycon = new MySqlConnection(Connection);
+                            myCom = new MySqlCommand(Query, mycon);
+                            mycon.Open();
+                            reader = myCom.ExecuteReader();
+                            mycon.Close();
+                            // MessageBox.Show("Data Inserted Successfully");
+                            
+
+
+                            //////////Insert Data in Message Table Close/////////
 
                             break;
 
@@ -172,6 +191,17 @@ namespace Student_Management
             comboBox_MS.SelectedIndex = -1;
            
            
+        }
+
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+            /////////////////////
+            After_Login a = new After_Login();
+            a.for_id.Text = for_id.Text;
+            a.for_name.Text = for_name.Text;
+            a.Show();
+            this.Close();
+            ////////////////////
         }
     }
 }

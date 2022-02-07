@@ -459,6 +459,16 @@ namespace Student_Management
                 MessageBoxResult result = MessageBox.Show("Invalid ID");
             }
         }
-    
+
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+            /////////////////////
+            After_Login a = new After_Login();
+            a.for_id.Text = for_id.Text;
+            a.for_name.Text = for_name.Text;
+            a.Show();
+            this.Close();
+            ////////////////////
+        }
     }
 }

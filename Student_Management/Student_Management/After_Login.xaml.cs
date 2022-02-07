@@ -20,7 +20,12 @@ namespace Student_Management
     /// </summary>
     public partial class After_Login : Window
     {
-      
+
+
+        public String ID_fb = "";
+        public String yourname = "";
+       
+
 
         public After_Login()
         {
@@ -86,7 +91,12 @@ namespace Student_Management
 
 
             Admin_Update a = new Admin_Update();
-           
+
+            /////////////////////
+            a.for_id.Text = for_id.Text;
+            a.for_name.Text = for_name.Text;
+            ////////////////////
+
             a.ID_box.Text = id_;
             a.FName_Box.Text = fname;
             a.LName_Box.Text = lname;
@@ -147,6 +157,10 @@ namespace Student_Management
             }
 
             //////////////////////////////
+            a.ID_fb = ID_fb;
+            a.yourname = yourname;
+
+            ////////////////////////////
 
 
 
@@ -156,8 +170,13 @@ namespace Student_Management
 
         private void Add_Student(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show(for_name.Text + "\n" + for_id.Text);
            
             StudentRegistration a = new StudentRegistration();
+
+            a.for_id.Text = for_id.Text;
+            a.for_name.Text = for_name.Text;
+
             a.Show();
             this.Close();
         }
@@ -169,7 +188,13 @@ namespace Student_Management
 
         private void ViewAndSetting(object sender, RoutedEventArgs e)
         {
+           
             StudentViewSetting s = new StudentViewSetting();
+            //////////////////////////////
+            s.for_id.Text = for_id.Text;
+            s.for_name.Text = for_name.Text;
+
+            ////////////////////////////
             s.Show();
             this.Close();
         }
@@ -177,6 +202,12 @@ namespace Student_Management
         private void View_All_Students(object sender, RoutedEventArgs e)
         {
             All_Students a = new All_Students();
+
+            /////////////////////
+            a.for_id.Text = for_id.Text;
+            a.for_name.Text = for_name.Text;
+            ////////////////////
+
             a.Show();
             this.Close();
         }
@@ -184,6 +215,10 @@ namespace Student_Management
         private void Add_Teacher(object sender, RoutedEventArgs e)
         {
             TeacherRegistration t = new TeacherRegistration();
+
+            t.for_id.Text = for_id.Text;
+            t.for_name.Text = for_name.Text;
+
             t.Show();
             this.Close();
         }
@@ -191,6 +226,8 @@ namespace Student_Management
         private void TeacherViewSetting(object sender, RoutedEventArgs e)
         {
             TeacherViewSetting t = new TeacherViewSetting();
+            t.for_id.Text = for_id.Text;
+            t.for_name.Text = for_name.Text;
             t.Show();
             this.Close();
         }
@@ -198,6 +235,8 @@ namespace Student_Management
         private void View_All_Teacher(object sender, RoutedEventArgs e)
         {
             ALL_Teachers a = new ALL_Teachers();
+            a.for_id.Text = for_id.Text;
+            a.for_name.Text = for_name.Text;
             a.Show();
             this.Close();
         }
@@ -205,6 +244,8 @@ namespace Student_Management
         private void Add_Subject(object sender, RoutedEventArgs e)
         {
             Add_Course a = new Add_Course();
+            a.for_id.Text = for_id.Text;
+            a.for_name.Text = for_name.Text;
             a.Show();
             this.Close();
         }
@@ -212,6 +253,8 @@ namespace Student_Management
         private void CourseViewSetting(object sender, RoutedEventArgs e)
         {
             CourseViewSetting c = new CourseViewSetting();
+            c.for_id.Text = for_id.Text;
+            c.for_name.Text = for_name.Text;
             c.Show();
             this.Close();
         }
@@ -219,6 +262,8 @@ namespace Student_Management
         private void View_All_Course(object sender, RoutedEventArgs e)
         {
             ALl_Course a = new ALl_Course();
+            a.for_id.Text = for_id.Text;
+            a.for_name.Text = for_name.Text;
             a.Show();
             this.Close();
         }
@@ -226,7 +271,28 @@ namespace Student_Management
         private void Course_Teacher(object sender, RoutedEventArgs e)
         {
             Course_And_Teacher c = new Course_And_Teacher();
+
+            c.for_id.Text = for_id.Text;
+            c.for_name.Text = for_name.Text;
+
             c.Show();
+            this.Close();
+        }
+
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+            MainWindow m = new MainWindow();
+            m.Show();
+            this.Close();
+        }
+
+        private void Payment(object sender, RoutedEventArgs e)
+        {
+            Result_And_Amount r = new Result_And_Amount();
+            r.for_id.Text = for_id.Text;
+            r.for_name.Text = for_name.Text;
+
+            r.Show();
             this.Close();
         }
     }

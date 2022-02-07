@@ -89,6 +89,7 @@ namespace Student_Management
             //  MessageBoxResult result = MessageBox.Show(""+Given_ID);
             String id = "", pass = "";
             String Fname = "", Lname = "", Age = "", Sex = "", Department = "", Semester = "", Section = "", CGPA = "", Rel = "", Phn = "", Mail = "", DOB = "", Loc = "";
+            String Payment = "";
             String Vaccinated = "", Blood_Donate = "", Blood_group = "", Last_Donate = "";
             /////Data Retrive//////////
             String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
@@ -108,7 +109,7 @@ namespace Student_Management
                 Fname = Convert.ToString(reader[1]);
                 Lname = Convert.ToString(reader[2]);              
                 Semester = Convert.ToString(reader[7]);
-             //   CGPA = Convert.ToString(reader[]);          
+                CGPA = Convert.ToString(reader[9]);          
             }
             mycon.Close();
 
@@ -170,6 +171,36 @@ namespace Student_Management
             {
                 comboBox_semester.SelectedIndex = -1;
             }
+
+            ///////Payment Combobox 
+             Query = "SELECT `Payment` FROM `result` WHERE id='"+Given_ID+"'";
+
+
+             mycon = new MySqlConnection(Connection);
+             myCom = new MySqlCommand(Query, mycon);
+
+          
+            mycon.Open();
+            reader = myCom.ExecuteReader();
+            while (reader.Read())
+            {
+                Payment = Convert.ToString(reader[0]);             
+            }
+            mycon.Close();
+
+            if (Payment == "Paid")
+            {
+                comboBox_Payment.SelectedIndex = 0;
+            }
+            else if (Payment == "UnPaid")
+            {
+                comboBox_Payment.SelectedIndex = 1;
+            }
+            else if (Payment == "")
+            {
+                comboBox_Payment.SelectedIndex = 1;
+            }
+          //  MessageBox.Show(Payment);
 
             if (id == "")
             {
@@ -287,6 +318,17 @@ namespace Student_Management
             ///Payment
             comboBox_Payment.SelectedIndex = -1;
              
+        }
+
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+            /////////////////////
+            After_Login a = new After_Login();
+            a.for_id.Text = for_id.Text;
+            a.for_name.Text = for_name.Text;
+            a.Show();
+            this.Close();
+            ////////////////////
         }
     }
 }

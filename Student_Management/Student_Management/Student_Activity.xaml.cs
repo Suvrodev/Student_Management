@@ -25,7 +25,8 @@ namespace Student_Management
         {
             InitializeComponent();
 
-           // tb_fname.Text = "Your Name";
+            String My_ID = for_id.Text;
+         //   MessageBox.Show(My_ID);
            
         }
 
@@ -153,7 +154,9 @@ namespace Student_Management
         {
             String ID = tb.Text;
             StudentActivity_2 s = new StudentActivity_2();
-            s.Get_ID = ID;
+            s.for_id.Text = for_id.Text;
+
+           // s.Get_ID = for_id.Text;
             s.Show();
             this.Close();
         }
@@ -161,13 +164,17 @@ namespace Student_Management
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
             All_Teacher_By_ a = new All_Teacher_By_();
+
+            a.for_id.Text = for_id.Text;
+            a.for_name.Text = for_name.Text;
+            a.for_where.Text = "students";
             a.Show();
             this.Close();
         }
 
         private void Back_Button(object sender, RoutedEventArgs e)
         {
-            MainWindow a = new MainWindow();
+            Student_Login a = new Student_Login();
             a.Show();
             this.Close();
         }
@@ -175,11 +182,9 @@ namespace Student_Management
         private void Go(object sender, RoutedEventArgs e)
         {
             InfoToStudents i = new InfoToStudents();
-            i.Get_ID = tb.Text;
-            
-            i.Department = tb_department.Text;
-
-            i.Semester = tb_semester.Text;
+            i.for_id.Text = tb.Text;            
+            i.for_dep.Text = tb_department.Text;
+            i.for_sem.Text = tb_semester.Text;
 
 
             i.Show();
@@ -193,8 +198,9 @@ namespace Student_Management
             MessageBox.Show(ID + "\n" + Semester);
             Student_OWN_result s = new Student_OWN_result();
 
-            s.Get_ID = ID;
-            s.Get_Semester = Semester;
+            s.for_id.Text = ID;
+            s.for_sem.Text = Semester;
+            s.for_dep.Text = tb_department.Text;
 
             s.Show();
             this.Close();
@@ -203,6 +209,11 @@ namespace Student_Management
         private void All_Students(object sender, RoutedEventArgs e)
         {
             All_Students_By a = new All_Students_By();
+
+            a.for_id.Text = for_id.Text;
+            a.for_name.Text = for_name.Text;
+            a.for_where.Text = "students";
+
             a.Show();
             this.Close();
         }

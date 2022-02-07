@@ -94,12 +94,14 @@ namespace Student_Management
 
              if(ID==id && Password == pass)
              {
-                string A = "hello";
+              //  string A = "hello";
                
 
 
                 Student_Activity a = new Student_Activity();
 
+                a.for_id.Text = id;
+             //   a.for_name.Text = for_name.Text;
 
                 a.tb.Text = ID_Box.Text;
                 a.tb_fname.Text = Fname;

@@ -325,10 +325,11 @@ namespace Student_Management
             }
         }
 
-       
-
-      
-
-       
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+            DeanProfile d = new DeanProfile();
+            d.Show();
+            this.Close();
+        }
     }
 }

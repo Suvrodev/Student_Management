@@ -33,5 +33,10 @@ namespace Student_Management
         {
 
         }
+
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

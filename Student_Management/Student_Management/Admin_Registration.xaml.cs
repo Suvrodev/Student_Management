@@ -191,5 +191,12 @@ namespace Student_Management
 
 
         }
+
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+            MainWindow m = new MainWindow();
+            m.Show();
+            this.Close();
+        }
     }
 }

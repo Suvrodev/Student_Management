@@ -14,6 +14,9 @@
         <ComboBox x:Name="comboBox_semester" HorizontalAlignment="Left" Margin="132,188,0,0" VerticalAlignment="Top" Width="56" Height="20" SelectedIndex="0"/>
         <Button x:Name="button_Copy" Content="Load" HorizontalAlignment="Left" Margin="222,77,0,0" VerticalAlignment="Top" Width="103" Background="#FF0CC6CF" Click="LOAD" Height="23"/>
         <Label x:Name="label" Content="Give Message" VerticalAlignment="Top" Height="40" Width="518.001" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="3.166,0,-4.167,0"/>
+        <Button x:Name="button_Copy2" Content="Back" HorizontalAlignment="Left" Margin="10,287,0,0" VerticalAlignment="Top" Width="39" Background="#FFBC6FD8" Click="Back_Button"/>
+        <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="336,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="#FFF6F7F7" Height="18" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold" Foreground="#FFF7F3F3"/>
+        <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="294,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" RenderTransformOrigin="1.462,-0.459" Height="24" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20" Background="#FFF4F9F8" Foreground="#FFF3F2F2"/>
 
     </Grid>
 </Window>

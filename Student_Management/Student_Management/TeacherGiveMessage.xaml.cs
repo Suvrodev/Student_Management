@@ -38,7 +38,7 @@ namespace Student_Management
                         /////Update Data////
 
                         String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
-                        String Query = "UPDATE `message` SET `"+Semester+"`='"+Message+"' WHERE id='"+Get_ID+"'";
+                        String Query = "UPDATE `message` SET `"+Semester+"`='"+Message+"' WHERE id='"+for_id.Text+"'";
 
 
 
@@ -64,7 +64,7 @@ namespace Student_Management
         {
             String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
             // String Query = "SELECT `"+ID+"`, `"+Password+"`  FROM `admin` WHERE ID='"+ID+"';";
-            String Query = "SELECT DISTINCT course.Semester FROM course INNER JOIN teacher ON course.C_Teacher = teacher.Name WHERE teacher.ID='" + Get_ID+"'";
+            String Query = "SELECT DISTINCT course.Semester FROM course INNER JOIN teacher ON course.C_Teacher = teacher.Name WHERE teacher.ID='" + for_id.Text+"'";
 
 
             MySqlConnection mycon = new MySqlConnection(Connection);
@@ -82,6 +82,18 @@ namespace Student_Management
 
             }
             mycon.Close();
+        }
+
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+           
+                /////////////////////
+                TeacherActivity a = new TeacherActivity();
+                a.for_id.Text = for_id.Text;
+                a.for_name.Text = for_name.Text;
+                a.Show();
+                this.Close();       
+            ////////////////////
         }
     }
 }

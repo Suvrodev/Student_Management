@@ -20,6 +20,10 @@ namespace Student_Management
     /// </summary>
     public partial class StudentRegistration : Window
     {
+
+        public String ID_fb = "";
+        public String yourname = "";
+
         public StudentRegistration()
         {
             InitializeComponent();
@@ -133,9 +137,24 @@ namespace Student_Management
                             MySqlDataReader reader = myCom.ExecuteReader(); ;
                             mycon.Close();
                             MessageBoxResult result = MessageBox.Show("Data Inserted Successfully");
-
-
                             ///Insert Data Close///
+
+
+                            ////Insert Data in Result Table/////////
+                             Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+                             Query = "INSERT INTO `result`(`ID`, `S_N`, `"+Semester+"`) VALUES ('"+ID+"','"+FName+"','"+CGPA+"')";
+
+
+
+                            mycon = new MySqlConnection(Connection);
+                            myCom = new MySqlCommand(Query, mycon);
+                            mycon.Open();
+                            reader = myCom.ExecuteReader(); 
+                            mycon.Close();
+                           // MessageBox.Show("Data Inserted Successfully");
+                            ///Insert data in Result Table Close/////
+
+
 
                             break;
 
@@ -178,6 +197,18 @@ namespace Student_Management
             ///Semester
             comboBox_semester.SelectedIndex = -1;
 
+        }
+
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+            After_Login a = new After_Login();
+
+            a.for_id.Text = for_id.Text;
+            a.for_name.Text = for_name.Text;
+
+
+            a.Show();
+            this.Close();
         }
     }
 }

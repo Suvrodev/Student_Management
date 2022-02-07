@@ -38,6 +38,9 @@
         <ComboBox x:Name="comboBox_Teacher_" HorizontalAlignment="Left" Margin="143,189,0,0" VerticalAlignment="Top" Width="179" SelectedIndex="0"/>
         <Button x:Name="button" Content="Submit" HorizontalAlignment="Left" Margin="97,231,0,0" VerticalAlignment="Top" Width="57" Background="#FF0CC6CF" Click="Reg_Click_btn"/>
         <Button x:Name="button_Copy" Content="Reset" HorizontalAlignment="Left" Margin="180,231,0,0" VerticalAlignment="Top" Width="53" Background="#FFE84066" Click="Reset_btn"/>
+        <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="388,570,0,-272" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="#FFF6F7F7" Height="18" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold" Foreground="#FFF7F3F3"/>
+        <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="346,546,0,-254" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" RenderTransformOrigin="1.462,-0.459" Height="24" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20" Background="#FFF4F9F8" Foreground="#FFF3F2F2"/>
+        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="43,275,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
 
     </Grid>
 </Window>

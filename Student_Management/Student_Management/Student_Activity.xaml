@@ -46,7 +46,7 @@
         <TextBox x:Name="tbx_new_rpass" HorizontalAlignment="Left" Height="19" Margin="158,604,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Background="#FF86FB9C"/>
         <Button x:Name="button_Copy" Content="Update Password" HorizontalAlignment="Left" Margin="326,603,0,0" VerticalAlignment="Top" Width="122" Background="#FF0CC6CF" Click="Update_Password"/>
         <Menu x:Name="menu" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="422" Margin="0,45,0,0">
-            <MenuItem Background="#FF97E6EE" FontSize="10" Header="Course" Click="Course"/>
+            <MenuItem Background="#FF97E6EE" FontSize="10" Header="Course " Click="Course"/>
             <MenuItem Background="#FFA1E289" FontSize="10" Header="Blood Donate" Height="22" Width="79" Click="Blood_Donation"/>
             <MenuItem Background="#FFE9F574" FontSize="10" Header="Information" Height="24" Width="69" Click="Go"/>
             <MenuItem Background="#FFA1E289" FontSize="10" Header="Teacher List" Height="22" Width="79" Click="MenuItem_Click"/>
@@ -54,6 +54,8 @@
             <MenuItem Background="#FFBF66F1" FontSize="10" Header="All Result" Height="24" Width="69" Click="All_result"/>
         </Menu>
         <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="25,657,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
+        <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="388,570,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="#FFF6F7F7" Height="18" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold" Foreground="#FFF7F3F3"/>
+        <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="346,546,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" RenderTransformOrigin="1.462,-0.459" Height="24" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20" Background="#FFF4F9F8" Foreground="#FFF3F2F2"/>
 
     </Grid>
 </Window>

@@ -14,6 +14,7 @@
                 <MenuItem Header="Add" Click="Add_Student"/>
                 <MenuItem Header="View And Setting" Click="ViewAndSetting"/>
                 <MenuItem Header="View All" Click="View_All_Students"/>
+                <MenuItem Header="Payment And Result" Click="Payment"/>
             </MenuItem>
             <MenuItem Background="#FFCC74F5" FontSize="10" Header="Teacher" Height="17" Width="57">
                 <MenuItem Header="Add Teacher" Click="Add_Teacher"/>
@@ -32,5 +33,6 @@
         <TextBlock x:Name="for_id_Copy" HorizontalAlignment="Left" Margin="307,69,0,0" TextWrapping="Wrap" Text="Your ID:" VerticalAlignment="Top" Width="55" Background="#FF53C9D4" Height="21" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
         <TextBlock x:Name="for_id_Copy1" HorizontalAlignment="Left" Margin="23,112,0,0" TextWrapping="Wrap" Text="Message from dean" VerticalAlignment="Top" Width="131" Background="#FF53C9D4" Height="21" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
         <TextBlock x:Name="dean_msg" HorizontalAlignment="Left" Margin="23,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="461" Background="#FFABE2C4" Height="69" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
+        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="22,289,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
     </Grid>
 </Window>

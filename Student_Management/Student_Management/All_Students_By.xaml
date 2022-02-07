@@ -8,7 +8,7 @@
         Title="All_Students_By" Height="297" Width="1400">
     <Grid>
         <Label x:Name="label" Content="View Students" VerticalAlignment="Top" Height="34" Width="1292" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="-82.5,0"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" Height="154" Width="1344"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" Height="131" Width="1345"/>
         <Label x:Name="label1_Copy2" Content="Sex" HorizontalAlignment="Left" Margin="474,43,0,0" VerticalAlignment="Top" Height="21" Width="33" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
         <Label x:Name="label1_Copy3" Content="Semester" HorizontalAlignment="Left" Margin="326,44,0,0" VerticalAlignment="Top" Height="22" Width="70" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
         <Label x:Name="label1_Copy4" Content="Religion" HorizontalAlignment="Left" Margin="610,41,0,0" VerticalAlignment="Top" Height="22" Width="44" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.5,0.5">
@@ -90,6 +90,10 @@
             <ComboBoxItem Content="O+"/>
             <ComboBoxItem Content="O-"/>
         </ComboBox>
+        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="16,218,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
+        <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="1139,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="#FFF6F7F7" Height="18" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold" Foreground="#FFF7F3F3"/>
+        <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="1097,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" RenderTransformOrigin="1.462,-0.459" Height="24" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20" Background="#FFF4F9F8" Foreground="#FFF3F2F2"/>
+        <TextBlock x:Name="for_where" HorizontalAlignment="Left" Margin="1139,282,0,-34" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="#FFF6F7F7" Height="18" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold" Foreground="#FFF7F3F3"/>
 
     </Grid>
 </Window>

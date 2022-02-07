@@ -8,7 +8,7 @@
         Title="Admin_Update" Height="675" Width="525">
     <Grid>
         <Label x:Name="label" Content="Admin Information and Update" VerticalAlignment="Top" Height="40" Width="518" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,-1,0"/>
-        <Grid Margin="0,0,0,-21">
+        <Grid Margin="0,0,10,-9">
             <Label x:Name="label1" Content="Admin Information and update" VerticalAlignment="Top" Height="40" Width="518" FontWeight="Bold" FontSize="15" Background="#FFAAD352" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,0,-1,0"/>
             <Label x:Name="label2" Content="First Name" HorizontalAlignment="Left" Margin="16,95,0,0" VerticalAlignment="Top" Height="21" Width="59" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
             <TextBox x:Name="FName_Box" HorizontalAlignment="Left" Height="21" Margin="80,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Background="#FFBCEAE4" FontWeight="Bold"/>
@@ -46,6 +46,9 @@
             <TextBox x:Name="pass_box" HorizontalAlignment="Left" Height="21" Margin="87,401,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Background="#FFBCEAE4" FontWeight="Bold"/>
             <Button x:Name="button_Copy1" Content="Reset" HorizontalAlignment="Left" Margin="226,442,0,0" VerticalAlignment="Top" Width="103" Background="#FFE84066" Click="Reset_btn"/>
             <TextBox x:Name="Date_Box" HorizontalAlignment="Left" Height="21" Margin="87,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" Background="#FFBCEAE4" FontWeight="Bold"/>
+            <Button x:Name="button_Copy" Content="Back" HorizontalAlignment="Left" Margin="42,589,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
+            <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="388,570,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="#FFF6F7F7" Height="18" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold" Foreground="#FFF7F3F3"/>
+            <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="346,546,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" RenderTransformOrigin="1.462,-0.459" Height="24" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20" Background="#FFF4F9F8" Foreground="#FFF3F2F2"/>
 
         </Grid>
 

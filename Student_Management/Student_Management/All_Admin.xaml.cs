@@ -62,5 +62,12 @@ namespace Student_Management
                 adp.Update(dt);
             mycon.Close();
         }
+
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+            DeanProfile m = new DeanProfile();
+            m.Show();
+            this.Close();
+        }
     }
 }

@@ -20,6 +20,9 @@ namespace Student_Management
     /// </summary>
     public partial class StudentViewSetting : Window
     {
+        public String ID_fb = "";
+        public String yourname = "";
+
         public StudentViewSetting()
         {
             InitializeComponent();
@@ -107,6 +110,9 @@ namespace Student_Management
 
 
                             ///Update Data Close///
+                            ///
+
+                            
 
                             break;
 
@@ -768,5 +774,17 @@ namespace Student_Management
             }
         }
 
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+           // MessageBox.Show(ID_fb + "\n" + yourname);
+            After_Login a = new After_Login();
+
+            a.for_id.Text = for_id.Text;
+            a.for_name.Text = for_name.Text;
+
+
+            a.Show();
+            this.Close();
+        }
     }
 }

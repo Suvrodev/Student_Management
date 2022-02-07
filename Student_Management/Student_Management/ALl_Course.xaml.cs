@@ -94,5 +94,27 @@ namespace Student_Management
             adp.Update(dt);
             mycon.Close();
         }
+
+        private void Back_Button(object sender, RoutedEventArgs e)
+        {
+            if (for_where.Text == "teacher")
+            {
+                TeacherActivity t = new TeacherActivity();
+                t.for_id.Text = for_id.Text;
+                t.for_name.Text = for_name.Text;
+                t.Show();
+                this.Close();
+            }
+            else
+            {
+                /////////////////////
+                After_Login a = new After_Login();
+                a.for_id.Text = for_id.Text;
+                a.for_name.Text = for_name.Text;
+                a.Show();
+                this.Close();
+                ////////////////////
+            }
+        }
     }
 }
