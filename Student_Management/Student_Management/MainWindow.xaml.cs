@@ -137,9 +137,13 @@ namespace Student_Management
 
         private void Dean_go(object sender, RoutedEventArgs e)
         {
-            DeanProfile d = new DeanProfile();
+          //  DeanProfile d = new DeanProfile();
+            Dean_Login d = new Dean_Login();
             d.Show();
             this.Close();
+
+            
+
         }
 
         private void Student_go(object sender, RoutedEventArgs e)

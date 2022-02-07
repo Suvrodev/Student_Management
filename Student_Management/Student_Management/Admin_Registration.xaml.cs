@@ -194,7 +194,7 @@ namespace Student_Management
 
         private void Back_Button(object sender, RoutedEventArgs e)
         {
-            MainWindow m = new MainWindow();
+            DeanProfile m = new DeanProfile();
             m.Show();
             this.Close();
         }

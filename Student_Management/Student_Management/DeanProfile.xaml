@@ -34,6 +34,11 @@
             <MenuItem Background="#FF74F580" FontSize="10" Header="Give Message" Height="18" Width="80" Click="Give_Message"/>
         </Menu>
         <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="22,289,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
+        <TextBlock x:Name="Number_Admin" HorizontalAlignment="Left" Margin="88,123,0,0" TextWrapping="Wrap" Text="Message from dean" VerticalAlignment="Top" Width="137" Background="#FF53C9D4" Height="52" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
+        <TextBlock x:Name="Number_Teacher" HorizontalAlignment="Left" Margin="243,123,0,0" TextWrapping="Wrap" Text="Message from dean" VerticalAlignment="Top" Width="141" Background="#FF07C9A6" Height="52" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
+        <TextBlock x:Name="Number_CSE" HorizontalAlignment="Left" Margin="23,189,0,0" TextWrapping="Wrap" Text="Message from dean" VerticalAlignment="Top" Width="134" Height="59" RenderTransformOrigin="1.269,2.737" FontSize="14" Background="#FFD6B5D5"/>
+        <TextBlock x:Name="Number_EEE" HorizontalAlignment="Left" Margin="172,189,0,0" TextWrapping="Wrap" Text="Message from dean" VerticalAlignment="Top" Width="135" Background="#FFF7A5A0" Height="59" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
+        <TextBlock x:Name="Number_CIVIL" HorizontalAlignment="Left" Margin="332,189,0,0" TextWrapping="Wrap" Text="Message from dean" VerticalAlignment="Top" Width="133" Background="#FFA2D8F2" Height="59" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
 
     </Grid>
 </Window>

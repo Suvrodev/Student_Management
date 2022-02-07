@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MySql.Data.MySqlClient;
 
 namespace Student_Management
 {
@@ -22,6 +23,128 @@ namespace Student_Management
         public DeanProfile()
         {
             InitializeComponent();
+            String Admin_Message = "";
+            //////////////////////////////////////////////////
+            ////////////Number of Teacher////////////////////
+           string  Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+            // String Query = "SELECT `"+ID+"`, `"+Password+"`  FROM `admin` WHERE ID='"+ID+"';";
+           String Query = "SELECT COUNT(*) FROM teacher;";
+
+
+            MySqlConnection mycon = new MySqlConnection(Connection);
+            MySqlCommand myCom = new MySqlCommand(Query, mycon);
+
+            MySqlDataReader reader;
+            mycon.Open();
+            reader = myCom.ExecuteReader();
+            while (reader.Read())
+            {
+                Admin_Message = Convert.ToString(reader[0]);
+
+            }
+            mycon.Close();
+
+            Number_Teacher.Text = "Number of Teacher\n" + Admin_Message;
+            // MessageBox.Show(Admin_Message);
+            /////////////////////////////////////////////////
+
+            //////////////////////////////////////////////////
+            ////////////Number of Teacher////////////////////
+            Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+            // String Query = "SELECT `"+ID+"`, `"+Password+"`  FROM `admin` WHERE ID='"+ID+"';";
+            Query = "SELECT COUNT(*) FROM admin;";
+
+
+            mycon = new MySqlConnection(Connection);
+            myCom = new MySqlCommand(Query, mycon);
+
+
+            mycon.Open();
+            reader = myCom.ExecuteReader();
+            while (reader.Read())
+            {
+                Admin_Message = Convert.ToString(reader[0]);
+
+            }
+            mycon.Close();
+
+            Number_Admin.Text = "Number of Admin\n" + Admin_Message;
+            // MessageBox.Show(Admin_Message);
+            /////////////////////////////////////////////////
+
+            //////////////////////////////////////////////////
+            ////////////Number of Students in CSE Department////////////////////
+            Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+            // String Query = "SELECT `"+ID+"`, `"+Password+"`  FROM `admin` WHERE ID='"+ID+"';";
+            Query = "SELECT COUNT(*) FROM students WHERE department='CSE';";
+
+
+            mycon = new MySqlConnection(Connection);
+            myCom = new MySqlCommand(Query, mycon);
+
+
+            mycon.Open();
+            reader = myCom.ExecuteReader();
+            while (reader.Read())
+            {
+                Admin_Message = Convert.ToString(reader[0]);
+
+            }
+            mycon.Close();
+
+            Number_CSE.Text = "Number of Students in CSE \n" + Admin_Message;
+            // MessageBox.Show(Admin_Message);
+            /////////////////////////////////////////////////
+
+
+            //////////////////////////////////////////////////
+            ////////////Number of Students in EEE Department////////////////////
+            Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+            // String Query = "SELECT `"+ID+"`, `"+Password+"`  FROM `admin` WHERE ID='"+ID+"';";
+            Query = "SELECT COUNT(*) FROM students WHERE department='EEE';";
+
+
+            mycon = new MySqlConnection(Connection);
+            myCom = new MySqlCommand(Query, mycon);
+
+
+            mycon.Open();
+            reader = myCom.ExecuteReader();
+            while (reader.Read())
+            {
+                Admin_Message = Convert.ToString(reader[0]);
+
+            }
+            mycon.Close();
+
+            Number_EEE.Text = "Number of Students in EEE \n" + Admin_Message;
+            // MessageBox.Show(Admin_Message);
+            /////////////////////////////////////////////////
+
+
+            //////////////////////////////////////////////////
+            ////////////Number of Students in CSE Department////////////////////
+            Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+            // String Query = "SELECT `"+ID+"`, `"+Password+"`  FROM `admin` WHERE ID='"+ID+"';";
+            Query = "SELECT COUNT(*) FROM students WHERE department='CIVIL';";
+
+
+            mycon = new MySqlConnection(Connection);
+            myCom = new MySqlCommand(Query, mycon);
+
+
+            mycon.Open();
+            reader = myCom.ExecuteReader();
+            while (reader.Read())
+            {
+                Admin_Message = Convert.ToString(reader[0]);
+
+            }
+            mycon.Close();
+
+            Number_CIVIL.Text = "Number of Students in CIVIL \n" + Admin_Message;
+            // MessageBox.Show(Admin_Message);
+            /////////////////////////////////////////////////
         }
 
         private void Add_Student(object sender, RoutedEventArgs e)
