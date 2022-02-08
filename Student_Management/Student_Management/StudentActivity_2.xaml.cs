@@ -32,7 +32,7 @@ namespace Student_Management
 
         private void Show_btn(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(for_id.Text);
+          //  MessageBox.Show(for_id.Text);
             String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
             String Query = "";
             

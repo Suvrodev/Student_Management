@@ -195,7 +195,7 @@ namespace Student_Management
         {
             String ID = tb.Text;
             String Semester = tb_semester.Text;
-            MessageBox.Show(ID + "\n" + Semester);
+          //  MessageBox.Show(ID + "\n" + Semester);
             Student_OWN_result s = new Student_OWN_result();
 
             s.for_id.Text = ID;
