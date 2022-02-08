@@ -23,7 +23,7 @@
         <TextBlock x:Name="for_id_Copy1" HorizontalAlignment="Left" Margin="10,150,0,0" TextWrapping="Wrap" Text="Message from dean" VerticalAlignment="Top" Width="131" Background="#FF53C9D4" Height="21" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
         <TextBlock x:Name="dean_msg" HorizontalAlignment="Left" Margin="10,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="461" Background="#FFABE2C4" Height="69" RenderTransformOrigin="1.269,2.737" FontSize="14"/>
         <TextBlock x:Name="for_id_Copy2" HorizontalAlignment="Left" Margin="194,281,0,0" TextWrapping="Wrap" Text="Your Course" VerticalAlignment="Top" Width="110" Background="#FF53C9D4" Height="23" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold"/>
-        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="29,517,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
+        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="42,478,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button" RenderTransformOrigin="0.565,-1.069"/>
 
     </Grid>
 </Window>

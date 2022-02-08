@@ -14,8 +14,8 @@
         <Label x:Name="label1_Copy9" Content="ID" HorizontalAlignment="Left" Margin="99,62,0,0" VerticalAlignment="Top" Height="20" Width="22" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
         <TextBlock x:Name="tb_fname" HorizontalAlignment="Left" Margin="140,93,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Height="21" Width="102" FontWeight="Bold" Background="#FF86FB9C" Cursor="None"/>
         <TextBlock x:Name="tb_lname" HorizontalAlignment="Left" Margin="359,92,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Height="21" Width="102" FontWeight="Bold" Background="#FF86FB9C" Cursor="None"/>
-        <Button x:Name="button_Copy" Content="Modify" HorizontalAlignment="Left" Margin="80,243,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="modify_btn"/>
-        <Button x:Name="button_Copy1" Content="Reset" HorizontalAlignment="Left" Margin="177,243,0,0" VerticalAlignment="Top" Width="75" Background="#FFD08BEA" Click="Reset_btn"/>
+        <Button x:Name="button_Copy" Content="Modify" HorizontalAlignment="Left" Margin="149,240,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="modify_btn"/>
+        <Button x:Name="button_Copy1" Content="Reset" HorizontalAlignment="Left" Margin="246,240,0,0" VerticalAlignment="Top" Width="75" Background="#FFD08BEA" Click="Reset_btn"/>
         <Label x:Name="label1_Copy17" Content="Blood Donate" HorizontalAlignment="Left" Margin="54,129,0,0" VerticalAlignment="Top" Height="22" Width="72" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
         <ComboBox x:Name="comboBox_Blood_Donate" HorizontalAlignment="Left" Margin="136,129,0,0" VerticalAlignment="Top" Width="106">
             <ComboBoxItem Content="Yes"/>
@@ -32,7 +32,7 @@
             <ComboBoxItem Content="O+"/>
             <ComboBoxItem Content="O-"/>
         </ComboBox>
-        <Button x:Name="button_Copy2" Content="Back" HorizontalAlignment="Left" Margin="22,289,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
+        <Button x:Name="button_Copy2" Content="Back" HorizontalAlignment="Left" Margin="46,240,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
 
     </Grid>
 </Window>

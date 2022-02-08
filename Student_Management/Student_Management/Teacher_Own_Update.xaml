@@ -34,7 +34,7 @@
         <Label x:Name="label1_Copy3" Content="Merital Status" HorizontalAlignment="Left" Margin="107,285,0,0" VerticalAlignment="Top" Height="21" Width="68" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE" RenderTransformOrigin="0.526,2.13"/>
         <TextBlock x:Name="tb_m_s" HorizontalAlignment="Left" Margin="194,286,0,0" TextWrapping="Wrap" Text="Hey" VerticalAlignment="Top" Height="21" Width="102" FontWeight="Bold" Background="#FF86FB9C" Cursor="None"/>
         <Button x:Name="button_Copy" Content="Reset" HorizontalAlignment="Left" Margin="258,469,0,0" VerticalAlignment="Top" Width="75" Background="#FFE84066" Click="Reset_btn" RenderTransformOrigin="0.707,3.85"/>
-        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="30,562,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
+        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="30,474,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
         <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="388,570,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="#FFF6F7F7" Height="18" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold" Foreground="#FFF7F3F3"/>
         <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="346,546,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" RenderTransformOrigin="1.462,-0.459" Height="24" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20" Background="#FFF4F9F8" Foreground="#FFF3F2F2"/>
 

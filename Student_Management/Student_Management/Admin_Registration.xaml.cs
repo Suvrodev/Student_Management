@@ -148,11 +148,11 @@ namespace Student_Management
 
                                 String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
                                 String Query = "";
-                                if (catch_Data == "")
+                                if (for_id.Text == "")
                                 {
                                     Query = "INSERT INTO `admin`(`ID`,`fname`, `lname`, `age`, `sex`, `Religion`, `m_s`, `mail`, `phn`, `dob`, `loc`, `skill`, `pass`, `status`) VALUES ('" + ID + "','" + FName + "','" + LName + "','" + Age + "','" + Sex + "','" + Religion + "','" + Merital_Status + "','" + Email + "','" + Phone + "','" + DOB + "','" + Location + "','" + Skill + "','" + Password + "','False')";
                                 }
-                                if (catch_Data == "1")
+                                if (for_id.Text == "dean")
                                 {
                                     Query = "INSERT INTO `admin`(`ID`,`fname`, `lname`, `age`, `sex`, `Religion`, `m_s`, `mail`, `phn`, `dob`, `loc`, `skill`, `pass`, `status`) VALUES ('" + ID + "','" + FName + "','" + LName + "','" + Age + "','" + Sex + "','" + Religion + "','" + Merital_Status + "','" + Email + "','" + Phone + "','" + DOB + "','" + Location + "','" + Skill + "','" + Password + "','True')";
                                 }
@@ -194,9 +194,18 @@ namespace Student_Management
 
         private void Back_Button(object sender, RoutedEventArgs e)
         {
-            DeanProfile m = new DeanProfile();
-            m.Show();
-            this.Close();
+            if (for_id.Text == "dean")
+            {
+                DeanProfile m = new DeanProfile();
+                m.Show();
+                this.Close();
+            }
+            else
+            {
+                MainWindow m = new MainWindow();
+                m.Show();
+                this.Close();
+            }
         }
     }
 }

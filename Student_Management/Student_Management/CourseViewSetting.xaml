@@ -45,7 +45,7 @@
         <TextBox x:Name="Name_box_s" HorizontalAlignment="Left" Height="21" Margin="116,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249" Background="#FFBCEAE4" FontWeight="Bold"/>
         <Label x:Name="label1_Copy4" Content="Search By Name" HorizontalAlignment="Left" Margin="32,87,0,0" VerticalAlignment="Top" Height="20" Width="72" FontSize="8" FontWeight="Bold" Background="#FFB9DDEE"/>
         <Button x:Name="button_Copy3" Content="Search" HorizontalAlignment="Left" Margin="377,86,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="search_btn_Name"/>
-        <Button x:Name="button_Copy4" Content="Back" HorizontalAlignment="Left" Margin="29,358,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
+        <Button x:Name="button_Copy4" Content="Back" HorizontalAlignment="Left" Margin="377,306,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
         <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="388,570,0,-200" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="#FFF6F7F7" Height="18" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold" Foreground="#FFF7F3F3"/>
         <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="346,546,0,-182" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" RenderTransformOrigin="1.462,-0.459" Height="24" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20" Background="#FFF4F9F8" Foreground="#FFF3F2F2"/>
 

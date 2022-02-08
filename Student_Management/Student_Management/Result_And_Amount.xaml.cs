@@ -163,7 +163,7 @@ namespace Student_Management
             {
                 comboBox_semester.SelectedIndex = 10;
             }
-            else if (Semester == "4_2")
+            else if (Semester == "4_3")
             {
                 comboBox_semester.SelectedIndex = 11;
             }
@@ -288,7 +288,7 @@ namespace Student_Management
             {
                 comboBox_semester.SelectedIndex = 10;
             }
-            else if (Semester == "4_2")
+            else if (Semester == "4_3")
             {
                 comboBox_semester.SelectedIndex = 11;
             }

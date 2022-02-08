@@ -44,7 +44,7 @@
             <ComboBoxItem Content="Paid"/>
             <ComboBoxItem Content="UnPaid"/>
         </ComboBox>
-        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="19,374,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
+        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="19,342,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
         <TextBlock x:Name="for_id" HorizontalAlignment="Left" Margin="356,357,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Background="#FFF6F7F7" Height="18" RenderTransformOrigin="1.269,2.737" FontSize="18" FontWeight="Bold" Foreground="#FFF7F3F3"/>
         <TextBlock x:Name="for_name" HorizontalAlignment="Left" Margin="314,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" RenderTransformOrigin="1.462,-0.459" Height="24" FontWeight="Bold" FontFamily="Monotype Corsiva" FontSize="20" Background="#FFF4F9F8" Foreground="#FFF3F2F2"/>
 

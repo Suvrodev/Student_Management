@@ -164,6 +164,8 @@ namespace Student_Management
         private void Add_Admin(object sender, RoutedEventArgs e)
         {
             Admin_Registration a = new Admin_Registration();
+
+            a.for_id.Text = "dean";
             a.catch_Data = "1";
             a.Show();
             this.Close();

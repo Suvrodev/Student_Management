@@ -14,7 +14,7 @@
         <Button x:Name="button" Content="Submit" HorizontalAlignment="Left" Margin="139,182,0,0" VerticalAlignment="Top" Width="75" Background="#FF0CC6CF" Click="Login_Click_btn"/>
         <Button x:Name="button_Copy" Content="Reset" HorizontalAlignment="Left" Margin="232,182,0,0" VerticalAlignment="Top" Width="75" Background="#FFE84066" Click="Reset_btn"/>
         <PasswordBox x:Name="Pass_Box" HorizontalAlignment="Left" Margin="185,136,0,0" VerticalAlignment="Top" Height="22" Width="173" Background="#FFBCEAE4"/>
-        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="22,289,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
+        <Button x:Name="button_Copy1" Content="Back" HorizontalAlignment="Left" Margin="27,245,0,0" VerticalAlignment="Top" Width="75" Background="#FFBC6FD8" Click="Back_Button"/>
 
     </Grid>
 </Window>
