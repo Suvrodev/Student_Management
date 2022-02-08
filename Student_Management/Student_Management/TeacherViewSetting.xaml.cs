@@ -143,7 +143,24 @@ namespace Student_Management
                         mycon.Open();
                         MySqlDataReader reader = myCom.ExecuteReader(); ;
                         mycon.Close();
-                        MessageBoxResult result = MessageBox.Show("ID Deleted Successfully");
+                       
+
+
+                        ///Delete Data Close///
+                        ///
+                          /////Delete Data////
+
+                         Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+                         Query = "DELETE FROM `message` WHERE id='" + ID + "'";
+
+
+
+                        mycon = new MySqlConnection(Connection);
+                        myCom = new MySqlCommand(Query, mycon);
+                        mycon.Open();
+                        reader = myCom.ExecuteReader(); ;
+                        mycon.Close();
+                        MessageBox.Show("ID Deleted Successfully");
 
 
                         ///Delete Data Close///

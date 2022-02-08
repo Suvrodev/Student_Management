@@ -143,7 +143,7 @@ namespace Student_Management
                 {
                     //1st case
                     case MessageBoxResult.Yes:
-                        /////Update Data////
+                        /////Delete Data////
 
                         String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
                         String Query = "DELETE FROM `students` WHERE id='"+ID+"'";
@@ -155,10 +155,29 @@ namespace Student_Management
                         mycon.Open();
                         MySqlDataReader reader = myCom.ExecuteReader(); ;
                         mycon.Close();
-                        MessageBoxResult result = MessageBox.Show("ID Deleted Successfully");
+                       // MessageBox.Show("ID Deleted Successfully");
 
 
-                        ///Update Data Close///
+                        ///Delete Data Close///
+                        ///
+
+                        /////Delete Data from Result Table////
+
+                         Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
+                         Query = "DELETE FROM `result` WHERE id='" + ID + "'";
+
+
+
+                         mycon = new MySqlConnection(Connection);
+                         myCom = new MySqlCommand(Query, mycon);
+                        mycon.Open();
+                         reader = myCom.ExecuteReader(); ;
+                        mycon.Close();
+                        MessageBox.Show("ID Deleted Successfully");
+
+
+
+                        ///Delete Data Close///
 
                         break;
 
