@@ -31,6 +31,7 @@ namespace Student_Management
 
         private void Reg_Click_btn(object sender, RoutedEventArgs e)
         {
+            try { 
             String Checking_ID = "";
             String ID = ID_box.Text;
             String FName = FName_Box.Text;
@@ -168,9 +169,14 @@ namespace Student_Management
                     MessageBoxResult result = MessageBox.Show("Password Should be 6 or More digit");
                 }
             }
-        
-        //////////////////////////////////////////////////////////
-    }
+
+                //////////////////////////////////////////////////////////
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Problem:" + Convert.ToString(ex));
+            }
+        }
 
         private void Reset_btn(object sender, RoutedEventArgs e)
         {

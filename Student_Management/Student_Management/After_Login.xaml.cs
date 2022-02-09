@@ -293,7 +293,7 @@ namespace Student_Management
 
         private void Add_Student(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(for_name.Text + "\n" + for_id.Text);
+           // MessageBox.Show(for_name.Text + "\n" + for_id.Text);
            
             StudentRegistration a = new StudentRegistration();
 

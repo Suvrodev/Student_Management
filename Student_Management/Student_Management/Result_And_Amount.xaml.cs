@@ -28,27 +28,29 @@ namespace Student_Management
 
         private void modify_btn(object sender, RoutedEventArgs e)
         {
-            String ID = ID_box.Text;
-
-
-            if (ID_box.Text == "")
+            try
             {
-                MessageBoxResult result = MessageBox.Show("Invalid ID");
-            }
-            else
-            {
-                ////////////////////////
-                String _ID_ = ID_box.Text;
-                String FName = FName_Box.Text;
-                String LName = LName_Box.Text;             
-                String CGPA = cgpa_box.Text;
-                String Semester = comboBox_semester.Text;
-                String Payment = comboBox_Payment.Text;
-
-             
+                String ID = ID_box.Text;
 
 
-            
+                if (ID_box.Text == "")
+                {
+                    MessageBoxResult result = MessageBox.Show("Invalid ID");
+                }
+                else
+                {
+                    ////////////////////////
+                    String _ID_ = ID_box.Text;
+                    String FName = FName_Box.Text;
+                    String LName = LName_Box.Text;
+                    String CGPA = cgpa_box.Text;
+                    String Semester = comboBox_semester.Text;
+                    String Payment = comboBox_Payment.Text;
+
+
+
+
+
                     MessageBoxResult m = MessageBox.Show("Do you Really modify Data?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
                     switch (m)
                     {
@@ -57,7 +59,7 @@ namespace Student_Management
                             /////Update Data////
 
                             String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
-                            String Query = "UPDATE `result` SET `"+Semester+"`='"+CGPA+"',`Payment`='"+Payment+"' WHERE id='"+_ID_+"'";
+                            String Query = "UPDATE `result` SET `" + Semester + "`='" + CGPA + "',`Payment`='" + Payment + "' WHERE id='" + _ID_ + "'";
 
 
 
@@ -77,7 +79,11 @@ namespace Student_Management
                         case MessageBoxResult.No:
                             break;
                     }
-              
+
+                }
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Problem:" + Convert.ToString(ex));
             }
         }
 

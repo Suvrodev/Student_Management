@@ -53,6 +53,8 @@ namespace Student_Management
 
         private void Reg_Click_btn(object sender, RoutedEventArgs e)
         {
+            try
+            {
                 String Checking_ID = "";
 
                 String ID = ID_box.Text;
@@ -65,45 +67,45 @@ namespace Student_Management
 
                 var Semester_Temp = (ComboBoxItem)comboBox_semester.SelectedItem;
                 Semester = (String)Semester_Temp.Content;
-            
+
                 C_Teacher = comboBox_Teacher_.Text;
 
-                MessageBox.Show(ID + "\n" + Name + "\n" + Department + "\n" + Semester + "\n"+ C_Teacher);
+                MessageBox.Show(ID + "\n" + Name + "\n" + Department + "\n" + Semester + "\n" + C_Teacher);
 
-            //////////////////////////////////////////////////////////
-            ////ID Checking/////////////
-            ///////////////////////////////
-            String Connections = "Server=127.0.0.1;User ID=root; DataBase=project";
-            String Querys = " SELECT * FROM `course` WHERE ID = '" + ID + "'";
-
-
-            MySqlConnection mycons = new MySqlConnection(Connections);
-            MySqlCommand myComs = new MySqlCommand(Querys, mycons);
-
-            MySqlDataReader readers;
-            mycons.Open();
-            readers = myComs.ExecuteReader();
-            while (readers.Read())
-            {
-                Checking_ID = Convert.ToString(readers[0]);
-
-            }
+                //////////////////////////////////////////////////////////
+                ////ID Checking/////////////
+                ///////////////////////////////
+                String Connections = "Server=127.0.0.1;User ID=root; DataBase=project";
+                String Querys = " SELECT * FROM `course` WHERE ID = '" + ID + "'";
 
 
-            mycons.Close();
+                MySqlConnection mycons = new MySqlConnection(Connections);
+                MySqlCommand myComs = new MySqlCommand(Querys, mycons);
+
+                MySqlDataReader readers;
+                mycons.Open();
+                readers = myComs.ExecuteReader();
+                while (readers.Read())
+                {
+                    Checking_ID = Convert.ToString(readers[0]);
+
+                }
 
 
-            ///////////////////////////////////////////////
-            ////ID Checking End/////////////
+                mycons.Close();
 
-            ///////////////////////////////////////////////////////////
 
-            if (ID == Checking_ID)
-            {
-                MessageBox.Show("This ID Already Exists");
-            }
-            else
-            {            
+                ///////////////////////////////////////////////
+                ////ID Checking End/////////////
+
+                ///////////////////////////////////////////////////////////
+
+                if (ID == Checking_ID)
+                {
+                    MessageBox.Show("This ID Already Exists");
+                }
+                else
+                {
                     MessageBoxResult m = MessageBox.Show("Do you relly Insert?", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
                     switch (m)
@@ -114,7 +116,7 @@ namespace Student_Management
 
 
                             String Connection = "Server=127.0.0.1;User ID=root; DataBase=project";
-                            String Query = "INSERT INTO `course`(`ID`, `Name`, `Department`, `Semester`, `C_Teacher`) VALUES ('"+ID+ "','"+Name+ "','"+Department+ "','"+Semester+ "','"+C_Teacher+"')";
+                            String Query = "INSERT INTO `course`(`ID`, `Name`, `Department`, `Semester`, `C_Teacher`) VALUES ('" + ID + "','" + Name + "','" + Department + "','" + Semester + "','" + C_Teacher + "')";
 
 
 
@@ -134,10 +136,14 @@ namespace Student_Management
                         case MessageBoxResult.No:
                             break;
                     }
-               
-            }
 
-            //////////////////////////////////////////////////////////
+                }
+
+                //////////////////////////////////////////////////////////
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Problem:" + Convert.ToString(ex));
+            }
 
         }
 

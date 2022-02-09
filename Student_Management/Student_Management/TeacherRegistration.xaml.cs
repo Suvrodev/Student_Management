@@ -27,6 +27,7 @@ namespace Student_Management
 
         private void Reg_Click_btn(object sender, RoutedEventArgs e)
         {
+            try { 
             String Checking_ID = "";
 
             String ID = ID_box.Text;
@@ -166,7 +167,12 @@ namespace Student_Management
                 }
             }
 
-            //////////////////////////////////////////////////////////
+                //////////////////////////////////////////////////////////
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Problem:" + Convert.ToString(ex));
+            }
         }
 
         private void Reset_btn(object sender, RoutedEventArgs e)
